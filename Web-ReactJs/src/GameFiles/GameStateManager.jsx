@@ -15,6 +15,13 @@ function StateManager(currentState) {
             </div>
         );
     }
+    else if (currentState === "GameLoop") {
+        return (
+            <div>
+                <GameLoop/>
+            </div>
+        );
+    }
     //If the current state null or doesn´t exist, return an error message to the console and return main menu
     else {
         console.log("Error: State not found")
