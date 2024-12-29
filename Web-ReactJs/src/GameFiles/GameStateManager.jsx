@@ -1,5 +1,6 @@
 import React from "react";
 import MainMenu from "./MainMenu/MainMenu.jsx";
+import GameLoop from "./GameLoop/GameLoop.jsx";
 
 //Set default state
 currentState = "MainMenu";
@@ -7,15 +8,24 @@ currentState = "MainMenu";
 //State manager
 //This function will return the component that corresponds to the current state
 function StateManager(currentState) {
-    //If the current state is MainMenu, return the MainMenu component
     if (currentState === "MainMenu") {
         return (
-                <MainMenu/>
+            <MainMenu/>
+        );
+    }
+    else if (currentState === "Achievements") {
+        return (
+            <Achievements/>
+        );
+    }
+    else if (currentState === "LogIn") {
+        return (
+            <Login/>
         );
     }
     else if (currentState === "GameLoop") {
         return (
-                <GameLoop/>
+            <GameLoop/>
         );
     }
     //If the current state null or doesn´t exist, return an error message to the console and return main menu
