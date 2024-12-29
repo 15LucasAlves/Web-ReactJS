@@ -3,12 +3,14 @@ import './MainMenu.css';
 
 function MainMenu() {
   return (
-    <div className='main-menu'>
-      <h1 className='game-title'>Game Title</h1>
-      <div className='menu-buttons'>
-        <button className='menu-button start-game'>Start Game</button>
-        <button className='menu-button achievements'>Achievements</button>
-        <button className='menu-button login'>Log In</button>
+    <div className='mainMenu'>
+
+      <h1 className='gameTitle'>[XXXXX]</h1> // This is a placeholder for the game title
+
+      <div className='menuButtons'>
+        <button className='menuButton StartGame'>Start Game</button>
+        <button className='menuButton Achievements'>Achievements</button>
+        <button className='menuButton Login'>Log In</button>
       </div>
     </div>
   );

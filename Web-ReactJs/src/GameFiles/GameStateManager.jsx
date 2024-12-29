@@ -6,7 +6,7 @@ currentState = "MainMenu";
 
 //State manager
 //This function will return the component that corresponds to the current state
-function StateManager() {
+function StateManager(currentState) {
     //If the current state is MainMenu, return the MainMenu component
     if (currentState === "MainMenu") {
         return (
