@@ -1,5 +1,5 @@
 import React from 'react';
-import './MainMenu.css';
+import '../Components/buttonComponent.jsx'
 
 function MainMenu() {
   return (
@@ -8,9 +8,9 @@ function MainMenu() {
       <h1 className='gameTitle'>[XXXXX]</h1> // This is a placeholder for the game title
 
       <div className='menuButtons'>
-        <button className='menuButton StartGame'>Start Game</button>
-        <button className='menuButton Achievements'>Achievements</button>
-        <button className='menuButton Login'>Log In</button>
+        <buttonComponent>Start Game</buttonComponent>
+        <buttonComponent>Achievements</buttonComponent>
+        <buttonComponent>Log In</buttonComponent>
       </div>
     </div>
   );

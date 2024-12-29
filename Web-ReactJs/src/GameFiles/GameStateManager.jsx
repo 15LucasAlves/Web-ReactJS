@@ -1,5 +1,5 @@
 import React from "react";
-import MainMenu from "./MainMenu/MainMenu";
+import MainMenu from "./MainMenu/MainMenu.jsx";
 
 //Set default state
 currentState = "MainMenu";
@@ -10,16 +10,12 @@ function StateManager(currentState) {
     //If the current state is MainMenu, return the MainMenu component
     if (currentState === "MainMenu") {
         return (
-            <div>
                 <MainMenu/>
-            </div>
         );
     }
     else if (currentState === "GameLoop") {
         return (
-            <div>
                 <GameLoop/>
-            </div>
         );
     }
     //If the current state null or doesn´t exist, return an error message to the console and return main menu
