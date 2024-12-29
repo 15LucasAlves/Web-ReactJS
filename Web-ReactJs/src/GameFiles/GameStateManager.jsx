@@ -1,3 +1,4 @@
+import React from "react";
 import MainMenu from "./MainMenu/MainMenu";
 
 //Set default state
