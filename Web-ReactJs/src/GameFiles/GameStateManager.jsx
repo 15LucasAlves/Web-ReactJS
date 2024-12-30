@@ -2,7 +2,7 @@ import React from "react";
 import MainMenu from "./MainMenu/MainMenu.jsx";
 import GameLoop from "./GameLoop/GameLoop.jsx";
 import Achievements from "./Achivements/Achivements.jsx";
-import Login from "./Login/Login.jsx";
+import Login from "./Login/LoginEmail.jsx";
 
 var currentState;
 
