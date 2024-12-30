@@ -1,5 +1,4 @@
 import React from 'react';
-import '../Components/buttonComponent.jsx'
 
 function MainMenu() {
   return (
@@ -8,9 +7,9 @@ function MainMenu() {
       <h1 className='gameTitle'>[XXXXX]</h1> // This is a placeholder for the game title
 
       <div className='menuButtons'>
-        <buttonComponent>Start Game</buttonComponent>
-        <buttonComponent>Achievements</buttonComponent>
-        <buttonComponent>Log In</buttonComponent>
+        <button>Start Game</button>
+        <button>Achievements</button>
+        <button>Log In</button>
       </div>
     </div>
   );

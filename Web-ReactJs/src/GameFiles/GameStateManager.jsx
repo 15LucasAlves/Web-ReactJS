@@ -1,6 +1,8 @@
 import React from "react";
 import MainMenu from "./MainMenu/MainMenu.jsx";
 import GameLoop from "./GameLoop/GameLoop.jsx";
+import Achievements from "./Achivements/Achivements.jsx";
+import Login from "./Login/Login.jsx";
 
 //Set default state
 currentState = "MainMenu";
