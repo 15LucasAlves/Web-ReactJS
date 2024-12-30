@@ -92,10 +92,11 @@
 .userBox {
   text-align: center;
   padding: 1rem;
+  min-width: 400px;
+  min-height: 70px;
   border: 2px solid rgb(var(--fg-pb-green));
   color: rgb(var(--fg-pb-green));
   font-family: 'Share Tech Mono', monospace;
-  margin-top: 1rem;
 }
 
 .logoutButton {

@@ -52,7 +52,7 @@ function MainMenu() {
             
             {user ? (
               <div className='userBox'>
-                <p>Logged in as: {user.email}</p>
+                <p>Logged as: {user.email}</p>
                 <button className='logoutButton' onClick={handleLogout}>
                   Log Out
                 </button>
