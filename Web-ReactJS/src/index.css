@@ -1,4 +1,3 @@
-
 /* Fallout Css Assets library */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Share+Tech+Mono&display=swap');
 
@@ -12,31 +11,98 @@
   --fo-bg: var(--fg-pb-green), 0.25;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--background-color);
+  cursor: url('./assets/mouse.svg')
+}
+
+div.retro-container {
+  width: 90vw;
+  height: 90vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  overflow: hidden;
+  padding: 0.5rem;
+  border: 2px solid rgb(var(--fo-fg));
+  color: var(--primary-color);
+  mask-image: linear-gradient(to bottom, #0005 50%, #000 50%);
+  mask-size: 100% 2px;
+  text-shadow: 0 0 0.5rem;
+}
+
 .fo-ui {
   font-family: 'Roboto', sans-serif, system-ui;
 }
 
+.fo-glow {
+  text-shadow: 0 0 .25rem rgb(var(--fo-fg)), 0 0 1rem rgb(var(--fo-fg));
+}
+
+.fo-shadow {
+  box-shadow: 0 0 .25rem rgba(var(--fo-bg)), 0 0 1rem rgba(var(--fo-bg));
+}
+
+@keyframes crtAnimation {
+  0% {
+      background-position: 0 0;
+  }
+  100% {
+      background-position: 0 10000%;
+  }
+}
+
+.bg-terminal {
+  position: relative;
+  box-shadow: inset 0px 0px 2rem;
+  background-image: linear-gradient(0deg, #0000 10%, #fff1 90%, #0000 100%);
+  animation: crtAnimation 100s linear infinite;
+  background-size: 100% 80%;
+}
+
+.bg-terminal::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  user-select: none;
+  pointer-events: none;
+  background: repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15) 1px, transparent 1px, transparent 2px);
+}
+
 /* Main Menu css */
 
-html {background-color: black}
+html {background-color: rgb(4, 10, 5)}
 
 .gameTitle {
   margin: 120px 0 70px 0; /* y1 top padding, x1 left padding, y2 bottom padding, x2 right padding */
   cursor: default;
   text-align: center;
   font-size: 3rem;
-  font-weight: 700;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  color: rgb(var(--fg-pb-amber));
+  font-weight: 100;
+  font-family: 'Share Tech Mono', monospace, system-ui;
+  color: rgb(var(--fo-fg));
 }
 
 .menuButtons {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
-.startButton{
+.startButton, .achivButton, .loginButton{
   margin: 0 0 20px 0;
   cursor: pointer;
   text-transform: uppercase;
@@ -44,37 +110,19 @@ html {background-color: black}
   appearance: none;
   cursor: pointer;
   font-weight: 700;
+  font-size: 20px;
   font-family:'Share Tech Mono', monospace, system-ui;
-  background-color: rgb(var(--fo-fg));
-  padding: 30px 200px;
+  color: rgb(var(--fo-fg));
+  background-color: transparent;
+  min-height: 70px;
+  min-width: 400px;
   transition: background-color 0.1s;
+  box-shadow: rgb(var(--fo-fg));
+  border: 3px solid rgb(var(--fo-fg));
 }
 
-.achivButton{
-  margin: 0 0 20px 0;
-  cursor: pointer;
-  text-transform: uppercase;
-  user-select: none;
-  appearance: none;
-  cursor: pointer;
-  font-weight: 700;
-  font-family:'Share Tech Mono', monospace, system-ui;
+button:hover{
   background-color: rgb(var(--fo-fg));
-  padding: 30px 200px;
-  transition: background-color 0.1s;
-}
-
-.loginButton{
-  margin: 0 0 20px 0;
-  cursor: pointer;
-  text-transform: uppercase;
-  user-select: none;
-  appearance: none;
-  cursor: pointer;
-  font-weight: 700;
   font-family:'Share Tech Mono', monospace, system-ui;
-  background-color: rgb(var(--fo-fg));
-  padding: 30px 200px;
-  transition: background-color 0.1s;
+  color: black;
 }
-
