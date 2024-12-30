@@ -7,3 +7,5 @@ function GameLoop() {
         </div>
     );
 }
+
+export default GameLoop;
