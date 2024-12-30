@@ -93,6 +93,21 @@ html {background-color: rgb(4, 10, 5)}
   font-weight: 100;
   font-family: 'Share Tech Mono', monospace, system-ui;
   color: rgb(var(--fo-fg));
+  /*animation: blink 2s infinite;*/
+}
+
+@keyframes blink {
+  0% {
+      opacity: 1;
+  }
+
+  50% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
 }
 
 .menuButtons {

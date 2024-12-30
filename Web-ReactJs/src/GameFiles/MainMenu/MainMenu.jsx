@@ -3,9 +3,12 @@ import { auth } from '../Login/fireBase';
 import { signOut } from 'firebase/auth';
 import '../../index.css';
 import StateManager from '../GameStateManager';
+import { documentId } from 'firebase/firestore';
 
 function MainMenu() {
   const [user, setUser] = useState(null);
+  const ascii = [77, 73, 83, 83, 73, 79, 78, 88, 88, 73, 10];
+  const [headerText, setHeaderText] = useState('');
 
   useEffect(() => {
     // Listen for auth state changes
@@ -26,14 +29,27 @@ function MainMenu() {
     }
   };
 
+  const handleAscii = async()=>{
+    let currentIndex = 0;
+    let decodedText = '';
+    while(currentIndex < ascii.length){
+      decodedText += String.fromCharCode(ascii[currentIndex]);
+      setHeaderText(decodedText); 
+      currentIndex++;
+      await new Promise(resolve=>setTimeout(resolve,100));
+    }
+    await new Promise(resolve=>setTimeout(resolve,500));
+  }
+
+
   return (
     <body>
       <div class="retro-container">
         <div class="bg-terminal">
-          <h1 className='gameTitle'>77 73 83 83 73 79 78 32 88 88 73 10</h1>  
+          <h1 className='gameTitle'>{headerText || '77 73 83 83 73 79 78 88 88 73 10'}</h1>  
 
           <div className='menuButtons'>
-            <button className='startButton' onClick={() => StateManager("GameLoop")}>
+            <button className='startButton' onClick={async() => { await handleAscii(); StateManager("GameLoop");}}>
               Start Game
             </button>
 
