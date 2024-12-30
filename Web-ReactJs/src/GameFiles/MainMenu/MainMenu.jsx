@@ -1,15 +1,15 @@
 import React from 'react';
+import '../../index.css';
 
 function MainMenu() {
   return (
-    <div className='mainMenu'>
-
-      <h1 className='gameTitle'>[XXXXX]</h1> // This is a placeholder for the game title
+    <div>
+      <h1 className='gameTitle'>[XXXXX]</h1>  
 
       <div className='menuButtons'>
-        <button>Start Game</button>
-        <button>Achievements</button>
-        <button>Log In</button>
+        <button className='startButton'>Start Game</button>
+        <button className='achivButton'>Achievements</button>
+        <button className='loginButton'>Log In</button>
       </div>
     </div>
   );

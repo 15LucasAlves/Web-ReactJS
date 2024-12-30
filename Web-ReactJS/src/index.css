@@ -1,15 +1,80 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+
+/* Fallout Css Assets library */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Share+Tech+Mono&display=swap');
+
+:root {
+  --fg-pb-green: 26, 255, 128;
+  --fg-pb-blue: 46, 207, 255;
+  --fg-pb-amber: 255, 182, 66;
+  --fg-pb-white: 192, 255, 255;
+
+  --fo-fg: var(--fg-pb-green);
+  --fo-bg: var(--fg-pb-green), 0.25;
 }
 
-html, body, #root {
-  height: 100%;
-  width: 100%;
+.fo-ui {
+  font-family: 'Roboto', sans-serif, system-ui;
 }
 
-body {
-  font-family: Arial, sans-serif;
+/* Main Menu css */
+
+html {background-color: black}
+
+.gameTitle {
+  margin: 120px 0 70px 0; /* y1 top padding, x1 left padding, y2 bottom padding, x2 right padding */
+  cursor: default;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: rgb(var(--fg-pb-amber));
+}
+
+.menuButtons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.startButton{
+  margin: 0 0 20px 0;
+  cursor: pointer;
+  text-transform: uppercase;
+  user-select: none;
+  appearance: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-family:'Share Tech Mono', monospace, system-ui;
+  background-color: rgb(var(--fo-fg));
+  padding: 30px 200px;
+  transition: background-color 0.1s;
+}
+
+.achivButton{
+  margin: 0 0 20px 0;
+  cursor: pointer;
+  text-transform: uppercase;
+  user-select: none;
+  appearance: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-family:'Share Tech Mono', monospace, system-ui;
+  background-color: rgb(var(--fo-fg));
+  padding: 30px 200px;
+  transition: background-color 0.1s;
+}
+
+.loginButton{
+  margin: 0 0 20px 0;
+  cursor: pointer;
+  text-transform: uppercase;
+  user-select: none;
+  appearance: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-family:'Share Tech Mono', monospace, system-ui;
+  background-color: rgb(var(--fo-fg));
+  padding: 30px 200px;
+  transition: background-color 0.1s;
 }
 
