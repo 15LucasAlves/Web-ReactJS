@@ -2,19 +2,22 @@ import React from 'react';
 import LoginEmail from './LoginEmail';
 import LoginGoogle from './LoginGoogle';
 import './Login.css';
+import StateManager from '../GameStateManager';
 
-function Login({ onBackToMenu, onLoginSuccess }) {
+function Login() {
   return (
     <body>
-      <div class = "retro-container">
-        <div class = "bg-terminal">
+      <div class="retro-container">
+        <div class="bg-terminal">
           <div className="loginContainer">
-            <button className="backButton" onClick={onBackToMenu}>← Back to Menu</button>
-            <LoginEmail onLoginSuccess={onLoginSuccess} />
+            <button className="backButton" onClick={() => StateManager("MainMenu")}>
+              ← Back to Menu
+            </button>
+            <LoginEmail onLoginSuccess={() => StateManager("MainMenu")} />
             <div className="divider">
-              <span class = "or">OR</span>
+              <span class="or">OR</span>
             </div>
-            <LoginGoogle onLoginSuccess={onLoginSuccess} />
+            <LoginGoogle onLoginSuccess={() => StateManager("MainMenu")} />
           </div>
         </div>
       </div>

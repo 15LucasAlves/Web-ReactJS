@@ -1,13 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import ReactDOM from 'react-dom/client'
-import Login from '../Login/Login';
 import { auth } from '../Login/fireBase';
 import { signOut } from 'firebase/auth';
 import '../../index.css';
 import StateManager from '../GameStateManager';
 
 function MainMenu() {
-  const [showLogin, setShowLogin] = useState(false);
   const [user, setUser] = useState(null);
 
   useEffect(() => {
@@ -29,15 +26,6 @@ function MainMenu() {
     }
   };
 
-  if (showLogin) {
-    return (
-      <Login 
-        onBackToMenu={() => setShowLogin(false)}
-        onLoginSuccess={() => setShowLogin(false)}
-      />
-    );
-  }
-
   return (
     <body>
       <div class="retro-container">
@@ -49,7 +37,9 @@ function MainMenu() {
               Start Game
             </button>
 
-            <button className='achivButton' onClick={() => StateManager("Achievements")}>Achievements</button>
+            <button className='achivButton' onClick={() => StateManager("Achievements")}>
+              Achievements
+            </button>
             
             {user ? (
               <div className='userBox'>
@@ -59,7 +49,7 @@ function MainMenu() {
                 </button>
               </div>
             ) : (
-              <button className='loginButton' onClick={() => setShowLogin(true)}>
+              <button className='loginButton' onClick={() => StateManager("Login")}>
                 Sign In
               </button>
             )}
