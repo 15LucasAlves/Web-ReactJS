@@ -5,15 +5,20 @@ import './Login.css';
 
 function Login({ onBackToMenu, onLoginSuccess }) {
   return (
-    <div className="loginContainer">
-      <button className="backButton" onClick={onBackToMenu}>← Back to Menu</button>
-      <h1>Login</h1>
-      <LoginEmail onLoginSuccess={onLoginSuccess} />
-      <div className="divider">
-        <span>OR</span>
+    <body>
+      <div class = "retro-container">
+        <div class = "bg-terminal">
+          <div className="loginContainer">
+            <button className="backButton" onClick={onBackToMenu}>← Back to Menu</button>
+            <LoginEmail onLoginSuccess={onLoginSuccess} />
+            <div className="divider">
+              <span class = "or">OR</span>
+            </div>
+            <LoginGoogle onLoginSuccess={onLoginSuccess} />
+          </div>
+        </div>
       </div>
-      <LoginGoogle onLoginSuccess={onLoginSuccess} />
-    </div>
+    </body>
   );
 }
 

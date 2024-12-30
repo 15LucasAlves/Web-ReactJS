@@ -1,10 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--background-color);
+  cursor: url('./assets/mouse.svg')
+}
+
+div.retro-container {
+  width: 90vw;
+  height: 90vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  overflow: hidden;
+  padding: 0.5rem;
+  border: 2px solid rgb(var(--fo-fg));
+  color: var(--primary-color);
+  mask-image: linear-gradient(to bottom, #0005 50%, #000 50%);
+  mask-size: 100% 2px;
+  text-shadow: 0 0 0.5rem;
+}
+
+@keyframes crtAnimation {
+  0% {
+      background-position: 0 0;
+  }
+  100% {
+      background-position: 0 10000%;
+  }
+}
+
+.bg-terminal {
+  position: relative;
+  box-shadow: inset 0px 0px 2rem;
+  background-image: linear-gradient(0deg, #0000 10%, #fff1 90%, #0000 100%);
+  animation: crtAnimation 100s linear infinite;
+  background-size: 100% 80%;
+}
+
+.bg-terminal::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  user-select: none;
+  pointer-events: none;
+  background: repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15) 1px, transparent 1px, transparent 2px);
+}
+
+.logs{
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.or{
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.components {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+
+.textboxemail{
+  justify-content: center;
+}
+
 .loginContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 2rem;
   max-width: 400px;
-  margin: 0 auto;
+  margin-top: 100px;
+  margin-inline: auto;
   color: rgb(var(--fg-pb-green));
 }
 
@@ -20,6 +99,7 @@
   border: 2px solid rgb(var(--fg-pb-green));
   background: transparent;
   color: rgb(var(--fg-pb-green));
+  min-width: 350px;
   font-family: 'Share Tech Mono', monospace;
 }
 
@@ -33,6 +113,7 @@
   font-family: 'Share Tech Mono', monospace;
   text-transform: uppercase;
   transition: all 0.3s ease;
+  min-width: 350px;
 }
 
 .loginForm button:hover,

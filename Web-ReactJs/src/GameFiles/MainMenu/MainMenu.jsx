@@ -59,7 +59,7 @@ function MainMenu() {
               </div>
             ) : (
               <button className='loginButton' onClick={() => setShowLogin(true)}>
-                Log In
+                Sign In
               </button>
             )}
           </div>

@@ -11,7 +11,7 @@ function LoginEmail({ onLoginSuccess }) {
   const getErrorMessage = (errorCode) => {
     switch (errorCode) {
       case 'auth/email-already-in-use':
-        return 'This email is already registered. Please login instead.';
+        return 'This email is already registered. Please sign in instead.';
       case 'auth/weak-password':
         return 'Password should be at least 6 characters long.';
       case 'auth/invalid-email':
@@ -56,31 +56,35 @@ function LoginEmail({ onLoginSuccess }) {
 
   return (
     <div className="loginForm">
-      <h2>{isSignUp ? 'Sign Up' : 'Login'}</h2>
+      <h2 class = "logs">{isSignUp ? 'SIGN UP' : 'SIGN IN'}</h2>
       {errorMsg && <div className="errorMessage">{errorMsg}</div>}
       <form onSubmit={handleAuth}>
-        <input
-          type="email"
-          placeholder="Email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
-        <input
-          type="password"
-          placeholder="Password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
-        <button type="submit">
-          {isSignUp ? 'Sign Up' : 'Login'}
-        </button>
+        <div class = "components">
+          <input class = "textboxemail"
+            type="email"
+            placeholder="Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+          <button type="submit">
+            {isSignUp ? 'Sign Up' : 'Sign in'}
+          </button>
+        </div>
       </form>
-      <button onClick={() => {
-        setIsSignUp(!isSignUp);
-        setErrorMsg(''); // Clear error when switching modes
-      }}>
-        {isSignUp ? 'Already have an account? Login' : 'Need an account? Sign Up'}
-      </button>
+      <div class = "components">
+        <button class = "bu" onClick={() => {
+          setIsSignUp(!isSignUp);
+          setErrorMsg(''); // Clear error when switching modes
+        }}>
+          {isSignUp ? 'Already have an account? Sign in' : 'Need an account? Sign Up'}
+        </button>
+      </div>
     </div>
   );
 }
