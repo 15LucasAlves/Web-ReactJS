@@ -1,7 +1,7 @@
 import React from 'react';
 import LoginEmail from './LoginEmail';
 import LoginGoogle from './LoginGoogle';
-import './Login.css';
+import '../../index.css';
 import StateManager from '../GameStateManager';
 
 function Login() {
