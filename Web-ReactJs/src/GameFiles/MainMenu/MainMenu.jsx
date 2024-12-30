@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
+import ReactDOM from 'react-dom/client'
 import Login from '../Login/Login';
 import { auth } from '../Login/fireBase';
 import { signOut } from 'firebase/auth';
 import '../../index.css';
-
+import StateManager from '../GameStateManager';
 
 function MainMenu() {
-
   const [showLogin, setShowLogin] = useState(false);
   const [user, setUser] = useState(null);
 
@@ -40,15 +40,16 @@ function MainMenu() {
 
   return (
     <body>
-      <div class = "retro-container">
-        <div class = "bg-terminal">
-
+      <div class="retro-container">
+        <div class="bg-terminal">
           <h1 className='gameTitle'>77 73 83 83 73 79 78 32 88 88 73 10</h1>  
 
           <div className='menuButtons'>
+            <button className='startButton' onClick={() => {document.getElementById('root').innerHTML = ''; ReactDOM.createRoot(document.getElementById('root')).render(StateManager("GameLoop"));}}>
+              Start Game
+            </button>
 
-            <button className='startButton'>Start Game</button>
-            <button className='achivButton'>Achievements</button>
+            <button className='achivButton' onClick={() => StateManager("Achivements")}>Achievements</button>
             
             {user ? (
               <div className='userBox'>
@@ -68,6 +69,5 @@ function MainMenu() {
     </body>
   );
 }
-
 
 export default MainMenu;

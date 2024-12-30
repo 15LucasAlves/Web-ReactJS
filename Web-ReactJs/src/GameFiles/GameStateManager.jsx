@@ -2,7 +2,6 @@ import React from "react";
 import MainMenu from "./MainMenu/MainMenu.jsx";
 import GameLoop from "./GameLoop/GameLoop.jsx";
 import Achievements from "./Achivements/Achivements.jsx";
-import Login from "./Login/LoginEmail.jsx";
 
 var currentState;
 
@@ -17,11 +16,6 @@ function StateManager(currentState) {
     else if (currentState === "Achievements") {
         return (
             <Achievements/>
-        );
-    }
-    else if (currentState === "LogIn") {
-        return (
-            <Login/>
         );
     }
     else if (currentState === "GameLoop") {
