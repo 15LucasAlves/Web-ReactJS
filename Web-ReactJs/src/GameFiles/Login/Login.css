@@ -69,4 +69,67 @@
 .divider span {
   background-color: black;
   padding: 0 1rem;
+}
+
+.backButton {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  border: 2px solid rgb(var(--fg-pb-green));
+  color: rgb(var(--fg-pb-green));
+  cursor: pointer;
+  font-family: 'Share Tech Mono', monospace;
+  transition: all 0.3s ease;
+}
+
+.backButton:hover {
+  background-color: rgb(var(--fg-pb-green));
+  color: black;
+}
+
+.userBox {
+  text-align: center;
+  padding: 1rem;
+  border: 2px solid rgb(var(--fg-pb-green));
+  color: rgb(var(--fg-pb-green));
+  font-family: 'Share Tech Mono', monospace;
+  margin-top: 1rem;
+}
+
+.logoutButton {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  border: 2px solid rgb(var(--fg-pb-green));
+  color: rgb(var(--fg-pb-green));
+  cursor: pointer;
+  font-family: 'Share Tech Mono', monospace;
+  transition: all 0.3s ease;
+}
+
+.logoutButton:hover {
+  background-color: rgb(var(--fg-pb-green));
+  color: black;
+}
+
+.errorMessage {
+  background-color: rgba(255, 0, 0, 0.1);
+  border: 1px solid rgb(255, 0, 0);
+  color: rgb(255, 100, 100);
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  border-radius: 4px;
+  font-family: 'Share Tech Mono', monospace;
+  text-align: center;
+  width: 100%;
+}
+
+.googleLoginContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
 } 

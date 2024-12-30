@@ -2,34 +2,62 @@ import React, { useState } from 'react';
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "./fireBase";
 
-function LoginEmail() {
+function LoginEmail({ onLoginSuccess }) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [isSignUp, setIsSignUp] = useState(false);
+  const [errorMsg, setErrorMsg] = useState('');
+
+  const getErrorMessage = (errorCode) => {
+    switch (errorCode) {
+      case 'auth/email-already-in-use':
+        return 'This email is already registered. Please login instead.';
+      case 'auth/weak-password':
+        return 'Password should be at least 6 characters long.';
+      case 'auth/invalid-email':
+        return 'Please enter a valid email address.';
+      case 'auth/user-not-found':
+        return 'No account found with this email. Please sign up.';
+      case 'auth/wrong-password':
+        return 'Incorrect password. Please try again.';
+      default:
+        return 'An error occurred. Please try again.';
+    }
+  };
 
   const handleAuth = async (e) => {
     e.preventDefault();
+    setErrorMsg(''); // Clear any previous errors
+
     if (!email || !password) {
-      console.error("Please provide both email and password");
+      setErrorMsg('Please provide both email and password');
       return;
     }
 
     try {
       if (isSignUp) {
-        const userCredential = await createUserWithEmailAndPassword(auth, email, password);
-        console.log("User signed up:", userCredential.user);
+        await createUserWithEmailAndPassword(auth, email, password);
+        console.log("User signed up successfully");
+        // After signup, switch back to login mode
+        setIsSignUp(false);
+        setEmail('');
+        setPassword('');
+        setErrorMsg('Account created! Please log in.');
       } else {
         const userCredential = await signInWithEmailAndPassword(auth, email, password);
         console.log("User logged in:", userCredential.user);
+        onLoginSuccess(userCredential.user);
       }
     } catch (error) {
       console.error("Auth error:", error.code, error.message);
+      setErrorMsg(getErrorMessage(error.code));
     }
   };
 
   return (
     <div className="loginForm">
       <h2>{isSignUp ? 'Sign Up' : 'Login'}</h2>
+      {errorMsg && <div className="errorMessage">{errorMsg}</div>}
       <form onSubmit={handleAuth}>
         <input
           type="email"
@@ -47,7 +75,10 @@ function LoginEmail() {
           {isSignUp ? 'Sign Up' : 'Login'}
         </button>
       </form>
-      <button onClick={() => setIsSignUp(!isSignUp)}>
+      <button onClick={() => {
+        setIsSignUp(!isSignUp);
+        setErrorMsg(''); // Clear error when switching modes
+      }}>
         {isSignUp ? 'Already have an account? Login' : 'Need an account? Sign Up'}
       </button>
     </div>
