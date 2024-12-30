@@ -45,11 +45,11 @@ function MainMenu() {
           <h1 className='gameTitle'>77 73 83 83 73 79 78 32 88 88 73 10</h1>  
 
           <div className='menuButtons'>
-            <button className='startButton' onClick={() => {document.getElementById('root').innerHTML = ''; ReactDOM.createRoot(document.getElementById('root')).render(StateManager("GameLoop"));}}>
+            <button className='startButton' onClick={() => StateManager("GameLoop")}>
               Start Game
             </button>
 
-            <button className='achivButton' onClick={() => StateManager("Achivements")}>Achievements</button>
+            <button className='achivButton' onClick={() => StateManager("Achievements")}>Achievements</button>
             
             {user ? (
               <div className='userBox'>
