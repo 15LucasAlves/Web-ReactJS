@@ -1,0 +1,929 @@
+{
+  "dialogs": [
+    {
+      "id": 1,
+      "speaker": "Celeste",
+      "imageUrl": "celeste.png",
+      "text": "Sooo... I guess this is it. It was going knowing you! *Grabs communication radio and frantically tries to attune it to Base's frequency* Oh to hell with this, I can't believe those bastards just cut off all of the comms.",
+      "hasDecisions": false,
+      "nextDialogId": 2,
+      "decisions":[]
+    },
+    {
+      "id": 2,
+      "speaker": "Izumi",
+      "imageUrl": "izumi.png",
+      "text": "Now, now, let´s not waste the last bit of oxygen throwing tantrums...And if I could decide where to die, this isn´t a bad place.",
+      "hasDecisions": false,
+      "nextDialogId": 3,
+      "decisions": []
+    },
+    {
+      "id": 3,
+      "speaker": "Celeste",
+      "imageUrl": "celeste.png",
+      "text": "I feel like this might be a perfectly good time to be upset, not that the company lapdog would get it...",
+      "hasDecisions": false,
+      "nextDialogId": 4,
+      "decisions": []
+    },
+    {
+      "id": 4,
+      "speaker": "Izumi",
+      "imageUrl": "izumi.png",
+      "text": "Company lapdog- you...",
+      "hasDecisions": true,
+      "nextDialogId": null,
+      "decisions": [
+        {
+          "id": 401,
+          "speaker": "Player",
+          "imageUrl": "player.png",
+          "text": "There are worse places, worse ways to die truly...",
+          "nextDialogId": 5
+        },
+        {
+          "id": 402,
+          "speaker": "Player",
+          "imageUrl": "player.png",
+          "text": "Is now truly the time for pointless arguments? Our oxygen levels are dropping by the second.",
+          "nextDialogId": 5
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "speaker": "Unknown",
+      "imageUrl": "unknownlilly.png",
+      "text": "*Comms Radio Beeps...* *Static noise...* Hello? Can you hear me? This is Handler 03, codename Lilly from the Mars colony program Shadow Garden...",
+      "hasDecisions": false,
+      "nextDialogId": 6,
+      "decisions": []
+    },
+    {
+      "id": 6,
+      "speaker": "Lilly",
+      "imageUrl": "lilly.png",
+      "text": "We've receive a distress signal from this frequency. Is someone there? I Repeat...We've receive a distress signal from this frequency. Is someone there? Do you copy?",
+      "hasDecisions": false,
+      "nextDialogId": 7,
+      "decisions": []
+    },
+    {
+      "id": 7,
+      "speaker": "Celeste",
+      "imageUrl": "celeste.png",
+      "text": "Yes, loud and clear. This is Flight mission Dies Irae, fleet 021. Navigator Celeste talking. We're running low on oxygen and our active time is diminishing quickly. Send possible coordinates for a clear landing. Over.",
+      "hasDecisions": false,
+      "nextDialogId": 8,
+      "decisions": []
+    },
+    {
+      "id": 8,
+      "speaker": "Lilly",
+      "imageUrl": "lilly.png",
+      "text": "Roger that... Sector X-24Y-67Z-12 [UNABLE TO LAND] Sector X-30Y-29Z-04 [UNABLE TO LAND] Sector X-95Y-53Z-04 [CLEAR TO LAND] Go Ahead, you are clear to land.",
+      "hasDecisions": false,
+      "nextDialogId": 9,
+      "decisions": []
+    },
+    {
+      "id": 9,
+      "speaker": "Player",
+      "imageUrl": "player.png",
+      "text": "Commander 'Player Name' speaking... Landing processes initiated. Landing in 5 minutes regular time. Fleet 021 out. *Landing Finalized* *Please put on your suits* *Opening decompression chamber* *Airlock one through 3 disengaging* *Clear to walk*",
+      "hasDecisions": false,
+      "nextDialogId": 10,
+      "decisions": []
+    },
+    {
+      "id": 10,
+      "speaker": "Izumi",
+      "imageUrl": "izumi.png",
+      "text": "What the... How is this even possible, they completely recreated a society... in MARS? *Mutters* Independence from base uh? Maybe we could get the things needed to make it back to Earth.",
+      "hasDecisions": false,
+      "nextDialogId": 11,
+      "decisions": []
+    },
+    {
+      "id": 11,
+      "speaker": "Unknown2",
+      "imageUrl": "unknowncarnation.png",
+      "text": "Hello, I'm Carnation Commanding Captain of the Shadow Garden colony.",
+      "hasDecisions": false,
+      "nextDialogId": 12,
+      "decisions": []
+    },
+    {
+      "id": 12,
+      "speaker": "Carnation",
+      "imageUrl": "Carnation.png",
+      "text": "You must be the Commander, a pleasure to meet you. Would you mind following me back to the colony? I haven't used one of these suits in a long time, it's hard to move after a while. *You follow him back to the colony* *A small girl approaches you*",
+      "hasDecisions": false,
+      "nextDialogId": 13,
+      "decisions": []
+    },
+    {
+      "id": 13,
+      "speaker": "Lilly",
+      "imageUrl": "lilly.png",
+      "text": "It's a pleasure you must be 'Player Name', the girl is Celeste... And you are?",
+      "hasDecisions": false,
+      "nextDialogId": 14,
+      "decisions": []
+    },
+    {
+      "id": 14,
+      "speaker": "Izumi",
+      "imageUrl": "izumi.png",
+      "text": "I'm Chief engineer Izumi it's a pleasure. Could you perhaps show me the mechanical bay? There's something I would like to check.",
+      "hasDecisions": false,
+      "nextDialogId": 15,
+      "decisions": []
+    },
+    {
+      "id": 15,
+      "speaker": "Celeste",
+      "imageUrl": "celeste.png",
+      "text": "Sorry for the Nutjob, sometimes he forgets to have manners.",
+      "hasDecisions": false,
+      "nextDialogId": 16,
+      "decisions": []
+    },
+    {
+      "id": 16,
+      "speaker": "Izumi",
+      "imageUrl": "izumi.png",
+      "text": "No problem at all, we haven´t gotten any visitor lately. The temporary reports and visiting fleets all died down, so Lilly is also excited. Let me show you around so you meet with the others residents.",
+      "hasDecisions": true,
+      "nextDialogId": null,
+      "decisions": [
+         {
+          "id": 1601,
+          "speaker": "Player",
+          "imageUrl": "player.png",
+          "text": "Follow Izumi and Lilly to the Mechanical Bay...",
+          "nextDialogId": 17
+        },
+        {
+          "id": 1602,
+          "speaker": "Player",
+          "imageUrl": "player.png",
+          "text": "Follow Celeste and Carnation to greet the other residents...",
+          "nextDialogId": 40
+        }
+         ]
+    },
+    {
+      "id": 17,
+      "speaker": "Izumi",
+      "imageUrl": "izumi.png",
+      "text": "*You trail behind of Izumi, paying close attention to the conversation* I want to fix the Spaceship, if we are able to get back home... We could help you restore contact to base and maybe get you out of here.",
+      "hasDecisions": false,
+      "nextDialogId": 18,
+      "decisions": []
+    },
+    {
+      "id": 18,
+      "speaker": "Lilly",
+      "imageUrl": "lilly.png",
+      "text": "I don't imagine living my life in Earth anymore... After they stopped contacting us temporarily, we persevered and really built something we could call home. But I'm more than happy to help you.",
+      "hasDecisions": false,
+      "nextDialogId": 19,
+      "decisions": []
+    },
+    {
+      "id": 19,
+      "speaker": "Izumi",
+      "imageUrl": "izumi.png",
+      "text": "Thanks a lot... I don´t know what would've happened to us without your help.",
+      "hasDecisions": true,
+      "nextDialogId": null,
+      "decisions": [
+         {
+          "id": 1901,
+          "speaker": "Player",
+          "imageUrl": "player.png",
+          "text": "*Stay quiet*",
+          "nextDialogId": 22
+        },
+        {
+          "id": 1902,
+          "speaker": "Player",
+          "imageUrl": "player.png",
+          "text": "Why did base stop all contact and periodical voyages? It's not like them to abandon people.",
+          "nextDialogId": 20
+        }
+         ]
+    },
+    {
+      "id": 20,
+      "speaker": "Lilly",
+      "imageUrl": "lilly.png",
+      "text": "You see... Captain was a bit enthusiastic about the whole project. When we were told to abandon the colony, and return to base... Captain refused and stayed behind, of course a couple of us chose to stay as well. After that, we never got any feedback on our reports and the people who once left never returned.",
+      "hasDecisions": true,
+      "nextDialogId": null,
+      "decisions": [
+         {
+          "id": 2001,
+          "speaker": "Player",
+          "imageUrl": "player.png",
+          "text": "Should've follow the orders...",
+          "nextDialogId": 21
+        },
+        {
+          "id": 2002,
+          "speaker": "Player",
+          "imageUrl": "player.png",
+          "text": "The base is really cruel sometimes...",
+          "nextDialogId": 22
+        }
+         ]
+    },
+    {
+      "id": 21,
+      "speaker": "Lilly",
+      "imageUrl": "lilly.png",
+      "text": "What would you know.",
+      "hasDecisions": false,
+      "nextDialogId": 22,
+      "decisions": []
+    },
+    {
+      "id": 22,
+      "speaker": "Lilly",
+      "imageUrl": "lilly.png",
+      "text": "We are here!",
+      "hasDecisions": false,
+      "nextDialogId": 23,
+      "decisions": []
+    },
+    {
+      "id": 23,
+      "speaker": "Unknown3",
+      "imageUrl": "unknownivy.png",
+      "text": "*Mockingly says* Hey, I haven´t seen you around... Did you crash land in here!? I'm Ivy the head mechanic, It's your pleasure to meet me.",
+      "hasDecisions": false,
+      "nextDialogId": 24,
+      "decisions": []
+    },
+    {
+      "id": 24,
+      "speaker": "Ivy",
+      "imageUrl": "ivy.png",
+      "text": "I hear you want to fix your Spaceship...",
+      "hasDecisions": true,
+      "nextDialogId": null,
+      "decisions": [
+         {
+          "id": 2401,
+          "speaker": "Player",
+          "imageUrl": "player.png",
+          "text": "*Stick with them and help Izumi repair the Spaceship*",
+          "nextDialogId": 25
+        },
+        {
+          "id": 2402,
+          "speaker": "Player",
+          "imageUrl": "player.png",
+          "text": "*Go see what Celeste is doing*",
+          "nextDialogId": 43
+        }
+         ]
+    },
+    {
+      "id": 25,
+      "speaker": "Player",
+      "imageUrl": "player.png",
+      "text": "I can't believe how fast you can repair this thing...If we just could find what is causing the propulsors to fail, we could leave. *Mutters* And go back to our families *Izumi is checking the logs*",
+      "hasDecisions": false,
+      "nextDialogId": 26,
+      "decisions": []
+    },
+    {
+      "id": 26,
+      "speaker": "Izumi",
+      "imageUrl": "izumi.png",
+      "text": "Commander... This can´t be... Why didn't you tell us. *The once censured Mission Protocol* Contact Shadow Garden and disable the magnetic field [High Risk]",
+      "hasDecisions": true,
+      "nextDialogId": null,
+      "decisions": [
+         {
+          "id": 2401,
+          "speaker": "Player",
+          "imageUrl": "player.png",
+          "text": "*Stay silent*",
+          "nextDialogId": 27
+        },
+        {
+          "id": 2402,
+          "speaker": "Player",
+          "imageUrl": "player.png",
+          "text": "Never would've thought that we would find a ghost's nest...",
+          "nextDialogId": 27
+        }
+         ]
+    },
+    {
+      "id": 27,
+      "speaker": "Player",
+      "imageUrl": "player.png",
+      "text": "Base seems to think this magnetic field the Captain defends with his whole heart, could be the cause to the deviation of the asteroids to Earth.",
+      "hasDecisions": false,
+      "nextDialogId": 28,
+      "decisions": []
+    },
+    {
+      "id": 28,
+      "speaker": "Izumi",
+      "imageUrl": "izumi.png",
+      "text": "That's it then... we found the cause.The propulsors keep failing because of the force impeding the take off...And if we could just finish this mission we would not get terminated, and possibly even get promoted...\nYou know I had a feeling we would get kicked out of space program, but they had no cause...So they send us in a mission that other 20 fleets couldn't finish.\nAnd if we got back without any work done...Well you know what happens after.",
+      "hasDecisions": true,
+      "nextDialogId": null,
+      "decisions": [
+        {
+          "id": 2801,
+          "speaker": "Player",
+          "imageUrl": "player.png",
+          "text": "Well seems like there's a promotion for us to get!",
+          "nextDialogId": 29
+        },
+        {
+          "id": 2802,
+          "speaker": "Player",
+          "imageUrl": "player.png",
+          "text": "You don’t seem to grasp the consequences... *Go check Celeste*",
+          "nextDialogId": 45
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "speaker": "Izumi",
+      "imageUrl": "izumi.png",
+      "text": "Ivy told me a little about how the magnetic field works.\nAnd I know where the power supply and probably the console is... but I can't do it unnoticed unless you create some kind of distraction.\nI only need 5 minutes.\n*Izumi briefs you on how to proceed*\n*You join the others at the canteen*\n",
+      "hasDecisions": false,
+      "nextDialogId": 30,
+      "decisions": []
+    },
+    {
+      "id": 30,
+      "speaker": "Celeste",
+      "imageUrl": "celeste.png",
+      "text": "Finally, took you long enough.\nWhere is the asshole? Did he get lost in the \"marvellous wonder of mechanical engineering\"?",
+      "hasDecisions": true,
+      "nextDialogId": null,
+      "decisions": [
+        {
+          "id": 3001,
+          "speaker": "Player",
+          "imageUrl": "player.png",
+          "text": "He's finishing up with the Spaceship",
+          "nextDialogId": 31
+        },
+        {
+          "id": 3002,
+          "speaker": "Player",
+          "imageUrl": "player.png",
+          "text": "I don't... *Go check on Izumi*",
+          "nextDialogId": 36
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "speaker": "Izumi",
+      "imageUrl": "izumi.png",
+      "text": "Commander do you copy?\n",
+      "hasDecisions": false,
+      "nextDialogId": 32,
+      "decisions": []
+    },
+    {
+      "id": 32,
+      "speaker": "Player",
+      "imageUrl": "player.png",
+      "text": "Yes, over.\n*Izumi starts a countdown*",
+      "hasDecisions": true,
+      "nextDialogId": null,
+      "decisions": [
+        {
+          "id": 3201,
+          "speaker": "Player",
+          "imageUrl": "player.png",
+          "text": "Spill tea on Celeste",
+          "nextDialogId": 33
+        },
+        {
+          "id": 3202,
+          "speaker": "Player",
+          "imageUrl": "player.png",
+          "text": "Shut the canteen light off",
+          "nextDialogId": 36
+        },
+        {
+          "id": 3203,
+          "speaker": "Player",
+          "imageUrl": "player.png",
+          "text": "Kick the random child",
+          "nextDialogId": 36
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "speaker": "Izumi",
+      "imageUrl": "izumi.png",
+      "text": "Let's make a break for it!\nWe might have less time than I thought...\nIvy saw me in the console room.\n*You and Izumi start running to the Spaceship*\n*The colony members as well as Celeste get confused*\n*Ivy shouts from afar*",
+      "hasDecisions": false,
+      "nextDialogId": 34,
+      "decisions": []
+    },
+    {
+      "id": 34,
+      "speaker": "Ivy",
+      "imageUrl": "ivy.png",
+      "text": "Captain stop these fiends, they turned off the magnetic field...\nLast time we did that, almost half the colony got obliterated.\nIf we don't get it back online as fast as possible we are doomed!\n*As you and Izumi get to the Spaceship there is a loud hissing*\n*Everyone looks up*\n",
+      "hasDecisions": false,
+      "nextDialogId": 35,
+      "decisions": []
+    },
+    {
+      "id": 35,
+      "speaker": "Celeste",
+      "imageUrl": "celeste.png",
+      "text": "I hope you regret this in hell.\n*Spaceship takes off*\n*You witness as a meteor strikes the solar panels systems to nothing*\n",
+      "hasDecisions": false,
+      "nextDialogId": null,
+      "decisions": []
+    },
+    {
+      "id": 36,
+      "speaker": "Player",
+      "imageUrl": "player.png",
+      "text": "Izumi?! Are you there?\n*Silence*",
+      "hasDecisions": false,
+      "nextDialogId": 37,
+      "decisions": []
+    },
+    {
+      "id": 37,
+      "speaker": "Izumi",
+      "imageUrl": "izumi.png",
+      "text": "Commander do you copy?\n*Izumi starts a countdown*",
+      "hasDecisions": false,
+      "nextDialogId": 38,
+      "decisions": []
+    },
+    {
+      "id": 38,
+      "speaker": "Player",
+      "imageUrl": "player.png",
+      "text": "WAIT, WAIT, IM NOT READY.\n*Magnetic field shuts off*\n*You see Izumi running but Ivy manages to catch him and pin him to the ground*",
+      "hasDecisions": false,
+      "nextDialogId": 39,
+      "decisions": []
+    },
+    {
+      "id": 39,
+      "speaker": "Izumi",
+      "imageUrl": "izumi.png",
+      "text": "Commander?! How could you... is this it? You get to go back?\nAnd I get to rot here?\nI also have a family on earth, I also have ambitions...\nCome back... please...",
+      "hasDecisions": false,
+      "nextDialogId":null,
+      "decisions": []
+    },
+    {
+      "id": 40,
+      "speaker": "Carnation",
+      "imageUrl": "Carnation.png",
+      "text": "You see... we're a small family, apart from me and Lilly, we have Ivy the mechanic who your friend might get to meet...\nAnd the other 2 are just ahead.\nI could´ve never even imagine to survive for so long without them, much less make the colony self-sustaining.\n*You see 2 figures in the distance*\n*A women and a small child are staring intently*",
+      "hasDecisions": false,
+      "nextDialogId": 41,
+      "decisions": []
+    },
+    {
+      "id": 41,
+      "speaker": "Unknown",
+      "imageUrl": "unknownorchid.png",
+      "text": "Hi... I'm Orchid, and this is Aster.\n*Grabs Aster by the hand*",
+      "hasDecisions": false,
+      "nextDialogId": 42,
+      "decisions": []
+    },
+    {
+      "id": 41,
+      "speaker": "Aster",
+      "imageUrl": "aster.png",
+      "text": "Dad, who are them?",
+      "hasDecisions": false,
+      "nextDialogId": 42,
+      "decisions": []
+    },
+    {
+      "id": 42,
+      "speaker": "Celeste",
+      "imageUrl": "celeste.png",
+      "text": "We're astronauts from earth, we were sent on a mission to find out why the asteroids and debris are deviating into earth...",
+      "hasDecisions": true,
+      "nextDialogId": null,
+      "decisions": [
+        {
+          "id": 4201,
+          "speaker": "Player",
+          "imageUrl": "player.png",
+          "text": "Enough, you shouldn´t talk about the mission to non related people! The base could get you terminated. *Go see what Izumi is doing*",
+          "nextDialogId": 25
+        },
+        {
+          "id": 4202,
+          "speaker": "Player",
+          "imageUrl": "player.png",
+          "text": "Unfortunately we got hit by debris and most of our Spaceship functions stopped working making us unable to return.",
+          "nextDialogId": 43
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "speaker": "Orchid",
+      "imageUrl": "orchid.png",
+      "text": "When we first came here, to start the colony, asteroids and debris also used to rain down non stop.\nBut with the help of Carnation and Ivy we managed to raise a magnetic field around this area...",
+      "hasDecisions": false,
+      "nextDialogId": 44,
+      "decisions": []
+    },
+    {
+      "id": 44,
+      "speaker": "Carnation",
+      "imageUrl": "Carnation.png",
+      "text": "The magnetic field not only helps in making this area more secure, it also serves as a energy reserve if we stop getting energy from the Sol.\nIf you look outside, there's and area that looks like it has a checkered floor. In reality its all solar panels to make it so we never have to worry about energy.\nFrom the oxygen bubble to the machines in the mechanical bay, even the labs need the panels to keep everything in place.\nIn case of an emergency we should last about a week...",
+      "hasDecisions": true,
+      "nextDialogId": null,
+      "decisions": [
+        {
+          "id": 4401,
+          "speaker": "Player",
+          "imageUrl": "player.png",
+          "text": "I see you have thought of everything...",
+          "nextDialogId": 45
+        },
+        {
+          "id": 4402,
+          "speaker": "Player",
+          "imageUrl": "player.png",
+          "text": "Can the magnetic field be disabled?",
+          "nextDialogId": 63
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "speaker": "Aster",
+      "imageUrl": "aster.png",
+      "text": "Dad is ready for anything!\nIsn't that right?\n*Chuckles*",
+      "hasDecisions": false,
+      "nextDialogId": 46,
+      "decisions": []
+    },
+    {
+      "id": 46,
+      "speaker": "Orchid",
+      "imageUrl": "orchid.png",
+      "text": "Aren´t you a lively one?",
+      "hasDecisions": false,
+      "nextDialogId": 47,
+      "decisions": []
+    },
+    {
+      "id": 47,
+      "speaker": "Player",
+      "imageUrl": "player.png",
+      "text": "You hear someone rushing in your direction*\n*Izumi swiftly grabs Aster and puts a knife to his neck*",
+      "hasDecisions": false,
+      "nextDialogId": 48,
+      "decisions": []
+    },
+    {
+      "id": 48,
+      "speaker": "Izumi",
+      "imageUrl": "izumi.png",
+      "text": "Commander... Why didn't you tell us? *The once censured Mission Protocol*\nContact Shadow Garden and disable the magnetic field [High Risk]",
+      "hasDecisions": false,
+      "nextDialogId": 49,
+      "decisions": []
+    },
+    {
+      "id": 49,
+      "speaker": "Player",
+      "imageUrl": "player.png",
+      "text": "Never would've thought that we would find a ghost's nest...\nBase seems to think this magnetic field, could be the cause to the deviation of the asteroids to Earth.\n",
+      "hasDecisions": false,
+      "nextDialogId": 50,
+      "decisions": []
+    },
+    {
+      "id": 50,
+      "speaker": "Carnation",
+      "imageUrl": "Carnation.png",
+      "text": "Please, let Aster go...\nYour problem is with me!",
+      "hasDecisions": false,
+      "nextDialogId": 51,
+      "decisions": []
+    },
+    {
+      "id": 51,
+      "speaker": "Izumi",
+      "imageUrl": "izumi.png",
+      "text": "On one condition, you disarm and surrender yourself to me.",
+      "hasDecisions": true,
+      "nextDialogId": null,
+      "decisions": [
+        {
+          "id": 5101,
+          "speaker": "Player",
+          "imageUrl": "player.png",
+          "text": "Calm down, you don't need to do this... you will only get yourself killed.",
+          "nextDialogId": 52
+        },
+        {
+          "id": 5102,
+          "speaker": "Player",
+          "imageUrl": "player.png",
+          "text": "*You see Celeste Moving* Do nothing",
+          "nextDialogId": 59
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "speaker": "Izumi",
+      "imageUrl": "izumi.png",
+      "text": "I have so much to do back home...\nMy family is waiting for me, if sacrificing people I hardly know, is what it takes to go back...\nI won't hesitate, how can you guys choose to stay?",
+      "hasDecisions": false,
+      "nextDialogId": 53,
+      "decisions": []
+    },
+    {
+      "id": 53,
+      "speaker": "Celeste",
+      "imageUrl": "celeste.png",
+      "text": "It's not about choice, they are humans too...\nBut you could never understand that.\nNow unhand the child and stop freaking out!",
+      "hasDecisions": false,
+      "nextDialogId": 54,
+      "decisions": []
+    },
+    {
+      "id": 54,
+      "speaker": "Izumi",
+      "imageUrl": "izumi.png",
+      "text": "I can't, don't you see?\nI already started this, there's no way they would let me walk out unharmed.*You stare intently to the Captain*",
+      "hasDecisions": true,
+      "nextDialogId": null,
+      "decisions": [
+        {
+          "id": 5401,
+          "speaker": "Player",
+          "imageUrl": "player.png",
+          "text": "*let things unfold* Say nothing",
+          "nextDialogId": 55
+        },
+        {
+          "id": 5402,
+          "speaker": "Player",
+          "imageUrl": "player.png",
+          "text": "Try mediating",
+          "nextDialogId": 57
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "speaker": "Carnation",
+      "imageUrl": "Carnation.png",
+      "text": "*Izumi lunges at the captain and slashes his eye*\n*Softly*\nThanks for not injuring Aster, and goodbye.\n*Ivy who was trailing behind Izumi shoots him clear in the head*\n*Izumi lifeless body thumps to the ground*\n",
+      "hasDecisions": false,
+      "nextDialogId": 56,
+      "decisions": []
+    },
+    {
+      "id": 56,
+      "speaker": "Celeste",
+      "imageUrl": "celeste.png",
+      "text": "Goodbye friend...",
+      "hasDecisions": false,
+      "nextDialogId": null,
+      "decisions": []
+    },
+    {
+      "id": 57,
+      "speaker": "Player",
+      "imageUrl": "player.png",
+      "text": "I know you might be scared... even imagining not being able to go back to your family sounds scary.\nBut you still have me... and Celeste.\nI'm sure they won´t harm you if you just let Aster go.\nI wouldn't let them.",
+      "hasDecisions": false,
+      "nextDialogId": 58,
+      "decisions": []
+    },
+    {
+      "id": 58,
+      "speaker": "Izumi",
+      "imageUrl": "izumi.png",
+      "text": "Promise?\n*Aster frees himself from Izumi's grip and runs towards Orchid*\n*Ivy who was just behind Izumi, knocks him out and cuffs him*",
+      "hasDecisions": false,
+      "nextDialogId": null,
+      "decisions": []
+    },
+    {
+      "id": 59,
+      "speaker": "Izumi",
+      "imageUrl": "izumi.png",
+      "text": "What do you think you are doing Celeste?\nDo you dislike me that much!?",
+      "hasDecisions": false,
+      "nextDialogId": 60,
+      "decisions": []
+    },
+    {
+      "id": 60,
+      "speaker": "Celeste",
+      "imageUrl": "celeste.png",
+      "text": "Shut your trap Izumi, I'm tired of your shenanigans. *Pulls a gun*",
+      "hasDecisions": false,
+      "nextDialogId": 61,
+      "decisions": []
+    },
+    {
+      "id": 61,
+      "speaker": "Izumi",
+      "imageUrl": "izumi.png",
+      "text": "*Screams*\nYou wouldn't...\n*Celeste shoots Izumi in the legs*\n*Izumi manages to stab her in the abdomen*",
+      "hasDecisions": false,
+      "nextDialogId": 62,
+      "decisions": []
+    },
+    {
+      "id": 62,
+      "speaker": "Celeste",
+      "imageUrl": "celeste.png",
+      "text": "I'm sorry...\n*Celeste shoots Izumi one last time*\n*After 10 minutes Celeste also passes away from bleeding*\n",
+      "hasDecisions": false,
+      "nextDialogId": null,
+      "decisions": []
+    },
+    {
+      "id": 63,
+      "speaker": "Carnation",
+      "imageUrl": "Carnation.png",
+      "text": "It could, maybe for a couple minutes... anything more would destroy everything we've built.",
+      "hasDecisions": false,
+      "nextDialogId": 64,
+      "decisions": []
+    },
+    {
+      "id": 64,
+      "speaker": "Celeste",
+      "imageUrl": "celeste.png",
+      "text": "Have you ever tried to disable it?",
+      "hasDecisions": false,
+      "nextDialogId": 65,
+      "decisions": []
+    },
+    {
+      "id": 65,
+      "speaker": "Orchid",
+      "imageUrl": "orchid.png",
+      "text": "Once... but never again.\n*An alarm sounds*\n*The captain rushes to the magnetic field console room*\n*You and Celeste follow*",
+      "hasDecisions": false,
+      "nextDialogId": 66,
+      "decisions": []
+    },
+    {
+      "id": 66,
+      "speaker": "Izumi",
+      "imageUrl": "izumi.png",
+      "text": "I'm disabling the magnetic field whether you people like it or not, I have a mission to complete, I'm not getting stuck here...\nI HAVE A GODDAMN LIFE UNLIKE YOU!\n",
+      "hasDecisions": false,
+      "nextDialogId": 67,
+      "decisions": []
+    },
+    {
+      "id": 67,
+      "speaker": "Ivy",
+      "imageUrl": "ivy.png",
+      "text": "Stop that, you can't disable it... it might get us killed.",
+      "hasDecisions": false,
+      "nextDialogId": 68,
+      "decisions": []
+    },
+    {
+      "id": 68,
+      "speaker": "Celeste",
+      "imageUrl": "celeste.png",
+      "text": "Are you truly such a selfish bastard that you would risk killing all these people for the sake of a mission?\nWould you stoop that low? Is the congratulatory pat in the back and promotion worth the sacrifice???",
+      "hasDecisions": false,
+      "nextDialogId": 69,
+      "decisions": []
+    },
+    {
+      "id": 69,
+      "speaker": "Izumi",
+      "imageUrl": "izumi.png",
+      "text": "WHO CARES? You don't even know these people and what the hell do YOU know of sacrifice???",
+      "hasDecisions": true,
+      "nextDialogId": null,
+      "decisions": [
+        {
+          "id": 6901,
+          "speaker": "Player",
+          "imageUrl": "player.png",
+          "text": "Clearly more than you if you are willing to throw away all your morals for the sake of a paycheck...\nIt's not an option, I'm your Commander and I'm telling you, YOU can go home but the mission is OVER!",
+          "nextDialogId": 70
+        },
+        {
+          "id": 6902,
+          "speaker": "Player",
+          "imageUrl": "player.png",
+          "text": "Let's all calm down, Izumi, you can leave, we can deactivate the field for about 2 to 5 minutes...\nEnough for take off, we'll provide food and whatever else you need...but it's over, give up before we make you...",
+          "nextDialogId": 75
+        }
+      ]
+    },
+    {
+      "id": 70,
+      "speaker": "Izumi",
+      "imageUrl": "izumi.png",
+      "text": "And what will happen to you two?",
+      "hasDecisions": false,
+      "nextDialogId": 71,
+      "decisions": []
+    },
+    {
+      "id": 71,
+      "speaker": "Celeste",
+      "imageUrl": "celeste.png",
+      "text": "We are staying, we see a future here, if your glory obsessed excuse of an existence doesn't feel free to leave.\nYou have about 2 to 5 minutes to leave.\nThis will deactivate de magnetic field... go!",
+      "hasDecisions": false,
+      "nextDialogId": 72,
+      "decisions": []
+    },
+    {
+      "id": 72,
+      "speaker": "Izumi",
+      "imageUrl": "izumi.png",
+      "text": "2 to 5 minutes you say? Okay... It has been a displeasure to work with you...\n*Izumi embarks and leaves*",
+      "hasDecisions": false,
+      "nextDialogId": null,
+      "decisions": []
+    },
+    {
+      "id": 73,
+      "speaker": "Izumi",
+      "imageUrl": "izumi.png",
+      "text": "And what could you possibly do to stop me? I hold all the cards you see...",
+      "hasDecisions": true,
+      "nextDialogId": null,
+      "decisions": [
+        {
+          "id": 7301,
+          "speaker": "Player",
+          "imageUrl": "player.png",
+          "text": "You see Celeste moving *Do nothing*",
+          "nextDialogId": 74
+        },
+        {
+          "id": 7302,
+          "speaker": "Player",
+          "imageUrl": "player.png",
+          "text": "Not all the cards...You are forgetting one crucial thing.",
+          "nextDialogId": 75
+        }
+      ]
+    },
+    {
+      "id": 74,
+      "speaker": "Celeste",
+      "imageUrl": "celeste.png",
+      "text": "*Pulls out a gun* Go... I'm warning you I will shoot.\nLeave and never come back, tell base we both died.\n*Izumi embarks and leaves*",
+      "hasDecisions": false,
+      "nextDialogId": null,
+      "decisions": []
+    },
+    {
+      "id": 75,
+      "speaker": "Izumi",
+      "imageUrl": "izumi.png",
+      "text": "What thing?\nThis is all calculated, nothing you could do can stop me.\n",
+      "hasDecisions": false,
+      "nextDialogId": 76,
+      "decisions": []
+    },
+    {
+      "id": 74,
+      "speaker": "Player",
+      "imageUrl": "player.png",
+      "text": "Even if you could deactivate it, we would never let you leave alive.\nGo...\n*Izumi embarks and leaves*",
+      "hasDecisions": false,
+      "nextDialogId": null,
+      "decisions": []
+    }
+  ]
+}
