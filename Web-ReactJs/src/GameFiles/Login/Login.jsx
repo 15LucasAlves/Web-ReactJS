@@ -7,8 +7,8 @@ import StateManager from '../GameStateManager';
 function Login() {
   return (
     <body>
-      <div class="retro-container">
-        <div class="bg-terminal">
+      <div className="retro-container">
+        <div className="bg-terminal">
           <div className="loginContainer">
             <button className="backButton" onClick={() => StateManager("MainMenu")}>
               ← Back to Menu

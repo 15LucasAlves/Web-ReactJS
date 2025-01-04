@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
-import { auth } from "./fireBase";
+import { auth, db } from "./fireBase";
+import { doc, setDoc, getDoc } from "firebase/firestore"; 
 
 function LoginEmail({ onLoginSuccess }) {
   const [email, setEmail] = useState('');
@@ -27,7 +28,7 @@ function LoginEmail({ onLoginSuccess }) {
 
   const handleAuth = async (e) => {
     e.preventDefault();
-    setErrorMsg(''); // Clear any previous errors
+    setErrorMsg('');
 
     if (!email || !password) {
       setErrorMsg('Please provide both email and password');
@@ -36,9 +37,10 @@ function LoginEmail({ onLoginSuccess }) {
 
     try {
       if (isSignUp) {
-        await createUserWithEmailAndPassword(auth, email, password);
+        const userCredential = await createUserWithEmailAndPassword(auth, email, password);
         console.log("User signed up successfully");
-        // After signup, switch back to login mode
+        await setDoc(doc(db, "users", email), {
+        });
         setIsSignUp(false);
         setEmail('');
         setPassword('');
@@ -46,6 +48,12 @@ function LoginEmail({ onLoginSuccess }) {
       } else {
         const userCredential = await signInWithEmailAndPassword(auth, email, password);
         console.log("User logged in:", userCredential.user);
+        const userDoc = doc(db, "users", email);
+        const docSnap = await getDoc(userDoc);
+        if (!docSnap.exists()) {
+          await setDoc(userDoc, {
+          });
+        }
         onLoginSuccess(userCredential.user);
       }
     } catch (error) {
@@ -56,11 +64,11 @@ function LoginEmail({ onLoginSuccess }) {
 
   return (
     <div className="loginForm">
-      <h2 class = "logs">{isSignUp ? 'SIGN UP' : 'SIGN IN'}</h2>
+      <h2 className="logs">{isSignUp ? 'SIGN UP' : 'SIGN IN'}</h2>
       {errorMsg && <div className="errorMessage">{errorMsg}</div>}
       <form onSubmit={handleAuth}>
-        <div class = "components">
-          <input class = "textboxemail"
+        <div className="components">
+          <input className="textboxemail"
             type="email"
             placeholder="Email"
             value={email}
@@ -77,10 +85,10 @@ function LoginEmail({ onLoginSuccess }) {
           </button>
         </div>
       </form>
-      <div class = "components">
-        <button class = "bu" onClick={() => {
+      <div className="components">
+        <button className="bu" onClick={() => {
           setIsSignUp(!isSignUp);
-          setErrorMsg(''); // Clear error when switching modes
+          setErrorMsg('');
         }}>
           {isSignUp ? 'Already have an account? Sign in' : 'Need an account? Sign Up'}
         </button>
