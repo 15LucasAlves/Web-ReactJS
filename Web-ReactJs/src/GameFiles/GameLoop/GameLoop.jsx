@@ -4,14 +4,14 @@ import StateManager from '../GameStateManager';
 import scene from './story.json';
 
 const getJson = () => {
-
+    texto = scene.dialogs[1].text;
 }
 
 function GameLoop() {
     return (
         <body>
             <div class='text-container'>
-
+                
             </div>
 
             <div class='rightSide'>

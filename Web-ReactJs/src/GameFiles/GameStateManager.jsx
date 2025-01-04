@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
 import MainMenu from "./MainMenu/MainMenu.jsx";
 import GameLoop from "./GameLoop/GameLoop.jsx";
 import Achievements from "./Achivements/Achivements.jsx";

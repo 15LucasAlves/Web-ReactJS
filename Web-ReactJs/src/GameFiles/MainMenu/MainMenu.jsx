@@ -3,7 +3,7 @@ import { auth } from '../Login/fireBase';
 import { signOut } from 'firebase/auth';
 import '../../index.css';
 import StateManager from '../GameStateManager';
-import { documentId } from 'firebase/firestore';
+
 
 function MainMenu() {
   const [user, setUser] = useState(null);
