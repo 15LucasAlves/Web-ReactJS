@@ -44,8 +44,8 @@ function MainMenu() {
 
   return (
     <body>
-      <div className="retro-container">
-        <div className="bg-terminal">
+      <div className="bg-terminal">
+        <div className="retro-container">
           <h1 className='gameTitle'>{headerText || '77 73 83 83 73 79 78 88 88 73 10'}</h1>  
 
           <div className='menuButtons'>

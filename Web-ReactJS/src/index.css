@@ -309,8 +309,8 @@ button:hover{
 
 /* Game Page css */
 
-.text-container {
-  width: 30vw;
+div.text-container {
+  width: 90vw;
   height: 90vh;
   display: flex;
   flex-direction: column;
@@ -321,55 +321,91 @@ button:hover{
   color: var(--primary-color);
   mask-image: linear-gradient(to bottom, #0005 50%, #000 50%);
   mask-size: 100% 2px;
+  position: relative;
 }
 
-.rightSide{
-  width: 30vw;
-  height: 90vh;
+div.boxcontain{
+  width: 90vw;
+  height: 8vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-items: auto;
-  margin-top: 30px;
-  margin-left: 15px;
-}
-
-.images{
-  width: 30vw;
-  height: 60vh;
-  align-items: center;
   justify-content: center;
-  border: 2px solid rgb(var(--fo-fg));
+  border-bottom: 2px solid rgb(var(--fo-fg));
   color: var(--primary-color);
   mask-image: linear-gradient(to bottom, #0005 50%, #000 50%);
   mask-size: 100% 2px;
+  position: absolute; 
+  top: 0; 
+  left: 0;
 }
 
-.buttonsGame{
-  width: 30vw;
-  height: 30vh;
+div.inputcontain{
+  width: 90vw;
+  height: 8vh;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: 0.5rem;
-}
-
-.mainMenuGame{
-  width: 14vw;
-  height: 29vh;
-  border: 2px solid rgb(var(--fo-fg));
+  border-top: 2px solid rgb(var(--fo-fg));
   color: var(--primary-color);
   mask-image: linear-gradient(to bottom, #0005 50%, #000 50%);
   mask-size: 100% 2px;
+  position: absolute; 
+  bottom: 0;
 }
 
-.logGame{
-  width: 14vw;
-  height: 29vh;
-  border: 2px solid rgb(var(--fo-fg));
-  color: var(--primary-color);
-  mask-image: linear-gradient(to bottom, #0005 50%, #000 50%);
-  mask-size: 100% 2px;
+.input{
+  padding: 1rem;
+  background-color: transparent;
+  border: 2px solid rgb(var(--fg-pb-green));
+  color: rgb(var(--fg-pb-green));
+  cursor: pointer;
+  font-family: 'Share Tech Mono', monospace;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  min-width: 95%;
+  align-items: end;
 }
+
+
+.buttonsGame{
+  width: 30vw;
+  height: 30vh;
+  flex-direction: row;
+  position: absolute; 
+  top: 0; 
+  left: 0;
+}
+
+.sendImage{
+  width: 40px;
+  height: auto;
+  
+}
+
+.terminalImage, .menuImage, .folderImage{
+  width: 25px;
+  height: auto;
+  margin-right: 4px;
+}
+
+button:hover .terminalImage,
+button:hover .menuImage,
+button:hover .folderImage {
+  filter: grayscale(100%) brightness(0); 
+}
+
+.terminalButton, .mainMenuGame, .logGame{
+  padding: 1rem;
+  background-color: transparent;
+  border: 2px solid rgb(var(--fg-pb-green));
+  color: rgb(var(--fg-pb-green));
+  cursor: pointer;
+  font-family: 'Share Tech Mono', monospace;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  min-width: 50px;
+}
+
 
