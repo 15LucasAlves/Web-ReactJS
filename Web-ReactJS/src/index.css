@@ -306,3 +306,70 @@ button:hover{
   gap: 0.5rem;
 } 
 
+
+/* Game Page css */
+
+.text-container {
+  width: 30vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  border: 2px solid rgb(var(--fo-fg));
+  color: var(--primary-color);
+  mask-image: linear-gradient(to bottom, #0005 50%, #000 50%);
+  mask-size: 100% 2px;
+}
+
+.rightSide{
+  width: 30vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: auto;
+  margin-top: 30px;
+  margin-left: 15px;
+}
+
+.images{
+  width: 30vw;
+  height: 60vh;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgb(var(--fo-fg));
+  color: var(--primary-color);
+  mask-image: linear-gradient(to bottom, #0005 50%, #000 50%);
+  mask-size: 100% 2px;
+}
+
+.buttonsGame{
+  width: 30vw;
+  height: 30vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+.mainMenuGame{
+  width: 14vw;
+  height: 29vh;
+  border: 2px solid rgb(var(--fo-fg));
+  color: var(--primary-color);
+  mask-image: linear-gradient(to bottom, #0005 50%, #000 50%);
+  mask-size: 100% 2px;
+}
+
+.logGame{
+  width: 14vw;
+  height: 29vh;
+  border: 2px solid rgb(var(--fo-fg));
+  color: var(--primary-color);
+  mask-image: linear-gradient(to bottom, #0005 50%, #000 50%);
+  mask-size: 100% 2px;
+}
+
