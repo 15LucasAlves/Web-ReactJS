@@ -372,7 +372,6 @@ div.inputcontain{
   justify-content: end;
 }
 
-
 .buttonsGame{
   width: 30vw;
   height: 30vh;
@@ -456,6 +455,11 @@ button:hover .folderImage {
   font-family: 'Share Tech Mono', monospace;
   font-size: medium;
   text-align: center;
+}
+
+.character{
+  font-family: 'Share Tech Mono', monospace;
+  font-weight: bold;
 }
 
 .achievement1, .achievement2, .achievement3, .achievement4, .achievement5, .achievement6{
