@@ -15,33 +15,56 @@ function GameLoop() {
     };
 
     const dialogs = dialogsData.dialogs; // Lista de diálogos
-    const [currentDialog, setCurrentDialog] = useState(dialogs[0]); // Primeiro diálogo
-    const [mensagem, setMensagem] = useState(""); // Texto acumulado
-    const [typingText, setTypingText] = useState(""); // Texto sendo digitado
-    const [showDecisions, setShowDecisions] = useState(false); // Exibe as decisões
-    const [decisions, setDecisions] = useState([]); // Lista de decisões disponíveis
-    const [inputValue, setInputValue] = useState(""); // Valor do input do usuário
+  const [currentDialog, setCurrentDialog] = useState(dialogs[0]); // Primeiro diálogo
+  const [mensagem, setMensagem] = useState(""); // Texto acumulado
+  const [typingText, setTypingText] = useState(""); // Texto sendo digitado
+  const [showDecisions, setShowDecisions] = useState(false); // Exibe as decisões
+  const [decisions, setDecisions] = useState([]); // Lista de decisões disponíveis
+  const [inputValue, setInputValue] = useState(""); // Valor do input do usuário
 
-    const typingSpeed = 50; // Velocidade de typing em milissegundos
-  
+  const typingSpeed = 50; // Velocidade de typing em milissegundos
+
   useEffect(() => {
     if (!currentDialog) return;
 
     // Verifica se o diálogo atual tem decisões
     if (currentDialog.hasDecisions) {
       setShowDecisions(true);
-      setDecisions(currentDialog.decisions || []);
+      setDecisions(
+        currentDialog.decisions.map((decision) => ({
+          ...decision,
+          text: decision.text.replace(/<br\s*\/?>/g, "\n"), // Substitui <br /> por \n
+        }))
+      );
       return;
     }
 
     // Simula o "typing" do texto do diálogo
     const dialogText = currentDialog.text || ""; // Garante que seja uma string válida
+    let formattedText = dialogText.split(/(<br\s*\/?>)/g); // Divide o texto em partes, mantendo <br /> como separador
     let charIndex = 0;
+    let partIndex = 0;
+    let typingBuffer = ""; // Variável para acumular o texto enquanto o typing ocorre
 
     const intervalo = setInterval(() => {
-      if (charIndex < dialogText.length) {
-        setTypingText((prev) => prev + dialogText[charIndex]); // Adiciona caractere por caractere
-        charIndex++;
+      if (partIndex < formattedText.length) {
+        const part = formattedText[partIndex];
+
+        if (part === "<br />" || part === "<br>") {
+          // Adiciona uma quebra de linha
+          typingBuffer += "\n"; // Adiciona uma quebra de linha no buffer
+          setTypingText(typingBuffer); // Atualiza o estado
+          partIndex++;
+        } else if (charIndex < part.length) {
+          // Adiciona caractere por caractere
+          typingBuffer += part[charIndex]; // Adiciona o caractere no buffer
+          setTypingText(typingBuffer); // Atualiza o estado
+          charIndex++;
+        } else {
+          // Avança para a próxima parte
+          partIndex++;
+          charIndex = 0;
+        }
       } else {
         clearInterval(intervalo); // Para o intervalo ao terminar
         setMensagem((prevMensagem) =>
@@ -70,7 +93,10 @@ function GameLoop() {
         // Adiciona a decisão escolhida ao texto acumulado
         setMensagem((prevMensagem) =>
           prevMensagem +
-          `<strong>Player:</strong> ${chosenDecision.text}<br />`
+          `<strong>Player:</strong> ${chosenDecision.text.replace(
+            /\n/g,
+            "<br />"
+          )}<br />`
         );
 
         // Avança para o próximo diálogo com base na decisão escolhida
@@ -82,12 +108,12 @@ function GameLoop() {
         setDecisions([]); // Limpa as decisões
         setInputValue(""); // Reseta o valor do input
       } else {
-        alert("Invalid choice. Type a valid number.");
+        alert("Escolha inválida. Digite um número válido.");
         setInputValue(""); // Reseta o valor do input
       }
     }
   };
-
+  
     return (
         <body>
             <div className='bg-terminal'>
@@ -101,13 +127,15 @@ function GameLoop() {
         position: "absolute",
         top: 60,
         left: 10,
-        maxHeight: "72vh",
+        maxHeight: "70vh",
+        marginTop: "10px",
         boxSizing: "border-box",
         overflowY: "auto",
         color: "rgb(var(--fg-pb-green))", 
         display: "flex",  
         flexDirection: "column", 
         justifyContent: "flex-end",
+        whiteSpace: "pre-wrap", // Preserva as quebras de linha no texto
       }}
     >
       {/* Texto acumulado com <br /> já tratado no JSON */}

@@ -3,7 +3,7 @@
     {
       "id": 1,
       "speaker": "Celeste",
-      "text": "<br />Sooo... I guess this is it. It was good knowing you! <br /> *Grabs communication radio and frantically tries to attune it to Base's frequency* <br /> Oh to hell with this, I can't believe those bastards just cut off all of the comms.<br />",
+      "text": "<br />Sooo... I guess this is it. It was good knowing you!<br />*Grabs communication radio and frantically tries to attune it to Base's frequency*<br />Oh to hell with this, I can't believe those bastards just cut off all of the comms.<br />",
       "hasDecisions": false,
       "nextDialogId": 2,
       "decisions":[]
@@ -11,7 +11,7 @@
     {
       "id": 2,
       "speaker": "Izumi",
-      "text": "<br />Now, now, let's not waste the last bit of oxygen throwing tantrums... <br /> And if I could decide where to die, this isn't a bad place.<br />",
+      "text": "<br />Now, now, let's not waste the last bit of oxygen throwing tantrums...<br />And if I could decide where to die, this isn't a bad place.<br />",
       "hasDecisions": false,
       "nextDialogId": 3,
       "decisions": []
@@ -54,7 +54,7 @@
     {
       "id": 6,
       "speaker": "Unknown",
-      "text": "<br />*Comms Radio Beeps...* <br /> *Static noise...* Hello? <br /> Can you hear me? <br /> This is Handler 03, codename Lilly from the Mars colony program Shadow Garden...<br />",
+      "text": "<br />*Comms Radio Beeps...*<br />*Static noise...* Hello?<br />Can you hear me?<br />This is Handler 03, codename Lilly from the Mars colony program Shadow Garden...<br />",
       "hasDecisions": false,
       "nextDialogId": 7,
       "decisions": []
@@ -62,7 +62,7 @@
     {
       "id": 7,
       "speaker": "Lilly",
-      "text": "<br />We've receive a distress signal from this frequency. <br /> Is someone there? <br /> I Repeat... <br /> We've receive a distress signal from this frequency. <br /> Is someone there? Do you copy?<br />",
+      "text": "<br />We've receive a distress signal from this frequency.<br />Is someone there?<br />I Repeat...<br />We've receive a distress signal from this frequency.<br />Is someone there? Do you copy?<br />",
       "hasDecisions": false,
       "nextDialogId": 8,
       "decisions": []
@@ -78,7 +78,7 @@
     {
       "id": 9,
       "speaker": "Lilly",
-      "text": "<br />Roger that...<br />Sector X-24Y-67Z-12 <br />[UNABLE TO LAND]<br />Sector X-30Y-29Z-04<br />[UNABLE TO LAND]<br />Sector X-95Y-53Z-04<br />[CLEAR TO LAND] <br />Go Ahead, you are clear to land.<br />",
+      "text": "<br />Roger that...<br />Sector X-24Y-67Z-12<br />[UNABLE TO LAND]<br />Sector X-30Y-29Z-04<br />[UNABLE TO LAND]<br />Sector X-95Y-53Z-04<br />[CLEAR TO LAND]<br />Go Ahead, you are clear to land.<br />",
       "hasDecisions": false,
       "nextDialogId": 10,
       "decisions": []
@@ -86,7 +86,7 @@
     {
       "id": 10,
       "speaker": "Player",
-      "text": "<br />Commander 'Player Name' speaking... Landing processes initiated. Landing in 5 minutes regular time. Fleet 021 out.<br />*Landing Finalized* <br /> *Please put on your suits* <br /> *Opening decompression chamber* <br /> *Airlock one through 3 disengaging* <br /> *Clear to walk*<br />",
+      "text": "<br />Commander 'Player Name' speaking... Landing processes initiated. Landing in 5 minutes regular time. Fleet 021 out.<br />*Landing Finalized*<br />*Please put on your suits*<br />*Opening decompression chamber*<br />*Airlock one through 3 disengaging*<br />*Clear to walk*<br />",
       "hasDecisions": false,
       "nextDialogId": 11,
       "decisions": []
@@ -94,7 +94,7 @@
     {
       "id": 11,
       "speaker": "Izumi",
-      "text": "<br />What the... How is this even possible, they completely recreated a society... in MARS? <br /> *Mutters* Independence from base uh? Maybe we could get the things needed to make it back to Earth.<br />",
+      "text": "<br />What the... How is this even possible, they completely recreated a society... in MARS?<br />*Mutters* Independence from base uh? Maybe we could get the things needed to make it back to Earth.<br />",
       "hasDecisions": false,
       "nextDialogId": 12,
       "decisions": []
@@ -110,7 +110,7 @@
     {
       "id": 13,
       "speaker": "Carnation",
-      "text": "<br />You must be the Commander, a pleasure to meet you. Would you mind following me back to the colony? <br /> I haven't used one of these suits in a long time, it's hard to move after a while. <br /> *You follow him back to the colony* <br /> *A small girl approaches you*<br />",
+      "text": "<br />You must be the Commander, a pleasure to meet you. Would you mind following me back to the colony?<br />I haven't used one of these suits in a long time, it's hard to move after a while.<br />*You follow him back to the colony*<br />*A small girl approaches you*<br />",
       "hasDecisions": false,
       "nextDialogId": 14,
       "decisions": []
@@ -170,7 +170,7 @@
     {
       "id": 19,
       "speaker": "Izumi",
-      "text": "<br />*You trail behind of Izumi, paying close attention to the conversation* I want to fix the Spaceship, if we are able to get back home... <br /> We could help you restore contact to base and maybe get you out of here.<br />",
+      "text": "<br />*You trail behind of Izumi, paying close attention to the conversation* I want to fix the Spaceship, if we are able to get back home...<br />We could help you restore contact to base and maybe get you out of here.<br />",
       "hasDecisions": false,
       "nextDialogId": 20,
       "decisions": []
@@ -178,7 +178,7 @@
     {
       "id": 20,
       "speaker": "Lilly",
-      "text": "<br />I don't imagine living my life in Earth anymore... <br /> After they stopped contacting us temporarily, we persevered and really built something we could call home. But I'm more than happy to help you.<br />",
+      "text": "<br />I don't imagine living my life in Earth anymore...<br />After they stopped contacting us temporarily, we persevered and really built something we could call home. But I'm more than happy to help you.<br />",
       "hasDecisions": false,
       "nextDialogId": 21,
       "decisions": []
@@ -213,7 +213,7 @@
     {
       "id": 23,
       "speaker": "Lilly",
-      "text": "<br />You see... <br /> Captain was a bit enthusiastic about the whole project. When we were told to abandon the colony, and return to base... <br /> Captain refused and stayed behind, of course a couple of us chose to stay as well. After that, we never got any feedback on our reports and the people who once left never returned.<br />",
+      "text": "<br />You see...<br />Captain was a bit enthusiastic about the whole project. When we were told to abandon the colony, and return to base...<br />Captain refused and stayed behind, of course a couple of us chose to stay as well. After that, we never got any feedback on our reports and the people who once left never returned.<br />",
       "hasDecisions": false,
       "nextDialogId": 24,
       "decisions": []
@@ -258,7 +258,7 @@
     {
       "id": 27,
       "speaker": "Unknown",
-      "text": "<br />*Mockingly says* Hey, I haven´t seen you around... <br /> Did you crash land in here!? I'm Ivy the head mechanic, It's your pleasure to meet me.<br />",
+      "text": "<br />*Mockingly says* Hey, I haven´t seen you around...<br />Did you crash land in here!? I'm Ivy the head mechanic, It's your pleasure to meet me.<br />",
       "hasDecisions": false,
       "nextDialogId": 28,
       "decisions": []
@@ -293,7 +293,7 @@
     {
       "id": 30,
       "speaker": "Player",
-      "text": "<br />*You find yourself in Izumi's company* I can't believe how fast you can repair this thing...If we just could find what is causing the propulsors to fail, we could leave. <br /> *Mutters* And go back to our families <br /> *Izumi is checking the logs*<br />",
+      "text": "<br />*You find yourself in Izumi's company* I can't believe how fast you can repair this thing...If we just could find what is causing the propulsors to fail, we could leave.<br />*Mutters* And go back to our families<br />*Izumi is checking the logs*<br />",
       "hasDecisions": false,
       "nextDialogId": 31,
       "decisions": []
@@ -301,7 +301,7 @@
     {
       "id": 31,
       "speaker": "Izumi",
-      "text": "<br />Commander... <br /> This can´t be... <br /> Why didn't you tell us. <br /> *The once censured Mission Protocol* <br /> Contact Shadow Garden and disable the magnetic field [High Risk]<br />",
+      "text": "<br />Commander...<br />This can´t be...<br />Why didn't you tell us.<br />*The once censured Mission Protocol*<br />Contact Shadow Garden and disable the magnetic field [High Risk]<br />",
       "hasDecisions": false,
       "nextDialogId": 32,
       "decisions": []
@@ -336,7 +336,7 @@
     {
       "id": 34,
       "speaker": "Izumi",
-      "text": "<br />That's it then... we found the cause.The propulsors keep failing because of the force impeding the take off... <br /> And if we could just finish this mission we would not get terminated, and possibly even get promoted... <br /> You know I had a feeling we would get kicked out of space program, but they had no cause... <br /> So they send us in a mission that other 20 fleets couldn't finish. <br /> And if we got back without any work done... <br /> Well you know what happens after.<br />",
+      "text": "<br />That's it then... we found the cause.The propulsors keep failing because of the force impeding the take off...<br />And if we could just finish this mission we would not get terminated, and possibly even get promoted...<br />You know I had a feeling we would get kicked out of space program, but they had no cause...<br />So they send us in a mission that other 20 fleets couldn't finish.<br />And if we got back without any work done...<br />Well you know what happens after.<br />",
       "hasDecisions": false,
       "nextDialogId": 35,
       "decisions": []
@@ -363,7 +363,7 @@
     {
       "id": 36,
       "speaker": "Izumi",
-      "text": "<br />Ivy told me a little about how the magnetic field works. <br /> And I know where the power supply and probably the console is... but I can't do it unnoticed unless you create some kind of distraction. <br /> I only need 5 minutes. <br /> *Izumi briefs you on how to proceed* <br /> *You join the others at the canteen* <br /> ",
+      "text": "<br />Ivy told me a little about how the magnetic field works.<br />And I know where the power supply and probably the console is... but I can't do it unnoticed unless you create some kind of distraction.<br />I only need 5 minutes.<br />*Izumi briefs you on how to proceed*<br />*You join the others at the canteen*<br />",
       "hasDecisions": false,
       "nextDialogId": 37,
       "decisions": []
@@ -371,7 +371,7 @@
     {
       "id": 37,
       "speaker": "Celeste",
-      "text": "<br />Finally, took you long enough. <br /> Where is the asshole? Did he get lost in the \"marvellous wonder of mechanical engineering\"?<br />",
+      "text": "<br />Finally, took you long enough.<br />Where is the asshole? Did he get lost in the \"marvellous wonder of mechanical engineering\"?<br />",
       "hasDecisions": false,
       "nextDialogId": 38,
       "decisions": []
@@ -398,7 +398,7 @@
     {
       "id": 39,
       "speaker": "Izumi",
-      "text": "<br />Commander do you copy? <br />",
+      "text": "<br />Commander do you copy?<br />",
       "hasDecisions": false,
       "nextDialogId": 40,
       "decisions": []
@@ -406,7 +406,7 @@
     {
       "id": 40,
       "speaker": "Player",
-      "text": "<br />Yes, over. <br /> *Izumi starts a countdown*<br />",
+      "text": "<br />Yes, over.<br />*Izumi starts a countdown*<br />",
       "hasDecisions": false,
       "nextDialogId": 41,
       "decisions": []
@@ -414,7 +414,7 @@
     {
       "id": 41,
       "speaker": "Player",
-      "text": "<br />Yes, over. <br /> *Izumi starts a countdown*<br />",
+      "text": "<br />Yes, over.<br />*Izumi starts a countdown*<br />",
       "hasDecisions": true,
       "nextDialogId": null,
       "decisions": [
@@ -438,7 +438,7 @@
     {
       "id": 42,
       "speaker": "Izumi",
-      "text": "<br />Let's make a break for it! <br /> We might have less time than I thought... <br /> Ivy saw me in the console room. <br /> *You and Izumi start running to the Spaceship* <br /> *The colony members as well as Celeste get confused* <br /> *Ivy shouts from afar*<br />",
+      "text": "<br />Let's make a break for it!<br />We might have less time than I thought...<br />Ivy saw me in the console room.<br />*You and Izumi start running to the Spaceship*<br />*The colony members as well as Celeste get confused*<br />*Ivy shouts from afar*<br />",
       "hasDecisions": false,
       "nextDialogId": 43,
       "decisions": []
@@ -446,7 +446,7 @@
     {
       "id": 43,
       "speaker": "Ivy",
-      "text": "<br />Captain stop these fiends, they turned off the magnetic field... <br /> Last time we did that, almost half the colony got obliterated. <br /> If we don't get it back online as fast as possible we are doomed! <br /> *As you and Izumi get to the Spaceship there is a loud hissing* <br /> *Everyone looks up* <br />",
+      "text": "<br />Captain stop these fiends, they turned off the magnetic field...<br />Last time we did that, almost half the colony got obliterated.<br />If we don't get it back online as fast as possible we are doomed!<br />*As you and Izumi get to the Spaceship there is a loud hissing*<br />*Everyone looks up*<br />",
       "hasDecisions": false,
       "nextDialogId": 44,
       "decisions": []
@@ -454,7 +454,7 @@
     {
       "id": 44,
       "speaker": "Celeste",
-      "text": "<br />I hope you regret this in hell. <br /> *Spaceship takes off* <br /> *You witness as a meteor strikes the solar panels systems to nothing* <br />",
+      "text": "<br />I hope you regret this in hell.<br />*Spaceship takes off*<br />*You witness as a meteor strikes the solar panels systems to nothing*<br />",
       "hasDecisions": false,
       "nextDialogId": null,
       "decisions": [],
@@ -463,7 +463,7 @@
     {
       "id": 45,
       "speaker": "Player",
-      "text": "<br />*You get back to the Spaceship*  <br />  Izumi?! Are you there? <br /> *Silence*<br />",
+      "text": "<br />*You get back to the Spaceship* <br /> Izumi?! Are you there?<br />*Silence*<br />",
       "hasDecisions": false,
       "nextDialogId": 46,
       "decisions": []
@@ -471,7 +471,7 @@
     {
       "id": 46,
       "speaker": "Izumi",
-      "text": "<br />Commander do you copy? <br /> *Izumi starts a countdown*<br />",
+      "text": "<br />Commander do you copy?<br />*Izumi starts a countdown*<br />",
       "hasDecisions": false,
       "nextDialogId": 47,
       "decisions": []
@@ -479,7 +479,7 @@
     {
       "id": 47,
       "speaker": "Player",
-      "text": "<br />WAIT, WAIT, IM NOT READY. <br /> *Magnetic field shuts off* <br /> *You see Izumi running but Ivy manages to catch him and pin him to the ground*<br />",
+      "text": "<br />WAIT, WAIT, IM NOT READY.<br />*Magnetic field shuts off*<br />*You see Izumi running but Ivy manages to catch him and pin him to the ground*<br />",
       "hasDecisions": false,
       "nextDialogId": 48,
       "decisions": []
@@ -487,7 +487,7 @@
     {
       "id": 48,
       "speaker": "Izumi",
-      "text": "<br />Commander?! How could you... is this it? You get to go back? <br /> And I get to rot here? <br /> I also have a family on earth, I also have ambitions... <br /> Come back... please...<br />",
+      "text": "<br />Commander?! How could you... is this it? You get to go back?<br />And I get to rot here?<br />I also have a family on earth, I also have ambitions...<br />Come back... please...<br />",
       "hasDecisions": false,
       "nextDialogId": null,
       "decisions": [],
@@ -496,7 +496,7 @@
     {
       "id": 49,
       "speaker": "Carnation",
-      "text": "<br />You see... we're a small family, apart from me and Lilly, we have Ivy the mechanic who your friend might get to meet... <br /> And the other 2 are just ahead. <br /> I could've never even imagine to survive for so long without them, much less make the colony self-sustaining. <br /> *You see 2 figures in the distance* <br /> *A women and a small child are staring intently*<br />",
+      "text": "<br />You see... we're a small family, apart from me and Lilly, we have Ivy the mechanic who your friend might get to meet...<br />And the other 2 are just ahead.<br />I could've never even imagine to survive for so long without them, much less make the colony self-sustaining.<br />*You see 2 figures in the distance*<br />*A women and a small child are staring intently*<br />",
       "hasDecisions": false,
       "nextDialogId": 50,
       "decisions": []
@@ -504,7 +504,7 @@
     {
       "id": 50,
       "speaker": "Unknown",
-      "text": "<br />Hi... I'm Orchid, and this is Aster. <br /> *Grabs Aster by the hand*<br />",
+      "text": "<br />Hi... I'm Orchid, and this is Aster.<br />*Grabs Aster by the hand*<br />",
       "hasDecisions": false,
       "nextDialogId": 51,
       "decisions": []
@@ -547,7 +547,7 @@
     {
       "id": 54,
       "speaker": "Orchid",
-      "text": "<br />When we first came here, to start the colony, asteroids and debris also used to rain down non stop. <br /> But with the help of Carnation and Ivy we managed to raise a magnetic field around this area...<br />",
+      "text": "<br />When we first came here, to start the colony, asteroids and debris also used to rain down non stop.<br />But with the help of Carnation and Ivy we managed to raise a magnetic field around this area...<br />",
       "hasDecisions": false,
       "nextDialogId": 55,
       "decisions": []
@@ -555,7 +555,7 @@
     {
       "id": 55,
       "speaker": "Carnation",
-      "text": "<br />The magnetic field not only helps in making this area more secure, it also serves as a energy reserve if we stop getting energy from the Sol. <br /> If you look outside, there's an area that looks like it has a checkered floor. In reality its all solar panels to make it so we never have to worry about energy. <br /> From the oxygen bubble to the machines in the mechanical bay, even the labs need the panels to keep everything in place. <br /> In case of an emergency we should last about a week...<br />",
+      "text": "<br />The magnetic field not only helps in making this area more secure, it also serves as a energy reserve if we stop getting energy from the Sol.<br />If you look outside, there's an area that looks like it has a checkered floor. In reality its all solar panels to make it so we never have to worry about energy.<br />From the oxygen bubble to the machines in the mechanical bay, even the labs need the panels to keep everything in place.<br />In case of an emergency we should last about a week...<br />",
       "hasDecisions": false,
       "nextDialogId": 56,
       "decisions": []
@@ -584,7 +584,7 @@
     {
       "id": 57,
       "speaker": "Aster",
-      "text": "<br />Dad is ready for anything! <br /> Isn't that right? <br /> *Chuckles*<br />",
+      "text": "<br />Dad is ready for anything!<br />Isn't that right?<br />*Chuckles*<br />",
       "hasDecisions": false,
       "nextDialogId": 58,
       "decisions": []
@@ -600,7 +600,7 @@
     {
       "id": 59,
       "speaker": "Player",
-      "text": "<br />You hear someone rushing in your direction* <br /> *Izumi swiftly grabs Aster and puts a knife to his neck*<br />",
+      "text": "<br />You hear someone rushing in your direction*<br />*Izumi swiftly grabs Aster and puts a knife to his neck*<br />",
       "hasDecisions": false,
       "nextDialogId": 60,
       "decisions": []
@@ -608,7 +608,7 @@
     {
       "id": 60,
       "speaker": "Izumi",
-      "text": "<br />Commander... Why didn't you tell us? *The once censured Mission Protocol* <br /> Contact Shadow Garden and disable the magnetic field [High Risk]<br />",
+      "text": "<br />Commander... Why didn't you tell us? *The once censured Mission Protocol*<br />Contact Shadow Garden and disable the magnetic field [High Risk]<br />",
       "hasDecisions": false,
       "nextDialogId": 61,
       "decisions": []
@@ -616,7 +616,7 @@
     {
       "id": 61,
       "speaker": "Player",
-      "text": "<br />Never would've thought that we would find a ghost's nest... <br /> Base seems to think this magnetic field, could be the cause to the deviation of the asteroids to Earth. <br />",
+      "text": "<br />Never would've thought that we would find a ghost's nest...<br />Base seems to think this magnetic field, could be the cause to the deviation of the asteroids to Earth.<br />",
       "hasDecisions": false,
       "nextDialogId": 62,
       "decisions": []
@@ -624,7 +624,7 @@
     {
       "id": 62,
       "speaker": "Carnation",
-      "text": "<br />Please, let Aster go... <br /> Your problem is with me!<br />",
+      "text": "<br />Please, let Aster go...<br />Your problem is with me!<br />",
       "hasDecisions": false,
       "nextDialogId": 63,
       "decisions": []
@@ -659,7 +659,7 @@
     {
       "id": 65,
       "speaker": "Izumi",
-      "text": "<br />I have so much to do back home... <br /> My family is waiting for me, if sacrificing people I hardly know, is what it takes to go back... <br /> I won't hesitate, how can you guys choose to stay?<br />",
+      "text": "<br />I have so much to do back home...<br />My family is waiting for me, if sacrificing people I hardly know, is what it takes to go back...<br />I won't hesitate, how can you guys choose to stay?<br />",
       "hasDecisions": false,
       "nextDialogId": 66,
       "decisions": []
@@ -667,7 +667,7 @@
     {
       "id": 66,
       "speaker": "Celeste",
-      "text": "<br />It's not about choice, they are humans too... <br /> But you could never understand that. <br /> Now unhand the child and stop freaking out!<br />",
+      "text": "<br />It's not about choice, they are humans too...<br />But you could never understand that.<br />Now unhand the child and stop freaking out!<br />",
       "hasDecisions": false,
       "nextDialogId": 67,
       "decisions": []
@@ -675,7 +675,7 @@
     {
       "id": 67,
       "speaker": "Izumi",
-      "text": "<br />I can't, don't you see? <br /> I already started this, there's no way they would let me walk out unharmed.*You stare intently to the Captain*<br />",
+      "text": "<br />I can't, don't you see?<br />I already started this, there's no way they would let me walk out unharmed.*You stare intently to the Captain*<br />",
       "hasDecisions": false,
       "nextDialogId": 68,
       "decisions": []
@@ -702,7 +702,7 @@
     {
       "id": 69,
       "speaker": "Carnation",
-      "text": "<br />*Izumi lunges at the captain and slashes his eye* <br /> *Softly* <br /> Thanks for not injuring Aster, and goodbye. <br /> *Ivy who was trailing behind Izumi shoots him clear in the head* <br /> *Izumi lifeless body thumps to the ground* <br />",
+      "text": "<br />*Izumi lunges at the captain and slashes his eye*<br />*Softly*<br />Thanks for not injuring Aster, and goodbye.<br />*Ivy who was trailing behind Izumi shoots him clear in the head*<br />*Izumi lifeless body thumps to the ground*<br />",
       "hasDecisions": false,
       "nextDialogId": 70,
       "decisions": []
@@ -719,7 +719,7 @@
     {
       "id": 71,
       "speaker": "Player",
-      "text": "<br />I know you might be scared... even imagining not being able to go back to your family sounds scary. <br /> But you still have me... and Celeste. <br /> I'm sure they won't harm you if you just let Aster go. <br /> I wouldn't let them.<br />",
+      "text": "<br />I know you might be scared... even imagining not being able to go back to your family sounds scary.<br />But you still have me... and Celeste.<br />I'm sure they won't harm you if you just let Aster go.<br />I wouldn't let them.<br />",
       "hasDecisions": false,
       "nextDialogId": 72,
       "decisions": []
@@ -727,7 +727,7 @@
     {
       "id": 72,
       "speaker": "Izumi",
-      "text": "<br />Promise? <br /> *Aster frees himself from Izumi's grip and runs towards Orchid* <br /> *Ivy who was just behind Izumi, knocks him out and cuffs him*<br />",
+      "text": "<br />Promise?<br />*Aster frees himself from Izumi's grip and runs towards Orchid*<br />*Ivy who was just behind Izumi, knocks him out and cuffs him*<br />",
       "hasDecisions": false,
       "nextDialogId": null,
       "decisions": [],
@@ -736,7 +736,7 @@
     {
       "id": 73,
       "speaker": "Izumi",
-      "text": "<br />What do you think you are doing Celeste? <br /> Do you dislike me that much!?<br />",
+      "text": "<br />What do you think you are doing Celeste?<br />Do you dislike me that much!?<br />",
       "hasDecisions": false,
       "nextDialogId": 74,
       "decisions": []
@@ -752,7 +752,7 @@
     {
       "id": 75,
       "speaker": "Izumi",
-      "text": "<br />*Screams* <br /> You wouldn't... <br /> *Celeste shoots Izumi in the legs* <br /> *Izumi manages to stab her in the abdomen*<br />",
+      "text": "<br />*Screams*<br />You wouldn't...<br />*Celeste shoots Izumi in the legs*<br />*Izumi manages to stab her in the abdomen*<br />",
       "hasDecisions": false,
       "nextDialogId": 76,
       "decisions": []
@@ -760,7 +760,7 @@
     {
       "id": 76,
       "speaker": "Celeste",
-      "text": "<br />I'm sorry... <br /> *Celeste shoots Izumi one last time* <br /> *After 10 minutes Celeste also passes away from bleeding* <br />",
+      "text": "<br />I'm sorry...<br />*Celeste shoots Izumi one last time*<br />*After 10 minutes Celeste also passes away from bleeding*<br />",
       "hasDecisions": false,
       "nextDialogId": null,
       "decisions": [],
@@ -785,7 +785,7 @@
     {
       "id": 79,
       "speaker": "Orchid",
-      "text": "<br />Once... but never again. <br /> *An alarm sounds* <br /> *The captain rushes to the magnetic field console room* <br /> *You and Celeste follow*<br />",
+      "text": "<br />Once... but never again.<br />*An alarm sounds*<br />*The captain rushes to the magnetic field console room*<br />*You and Celeste follow*<br />",
       "hasDecisions": false,
       "nextDialogId": 80,
       "decisions": []
@@ -793,7 +793,7 @@
     {
       "id": 80,
       "speaker": "Izumi",
-      "text": "<br />I'm disabling the magnetic field whether you people like it or not, I have a mission to complete, I'm not getting stuck here... <br /> I HAVE A GODDAMN LIFE UNLIKE YOU! <br />",
+      "text": "<br />I'm disabling the magnetic field whether you people like it or not, I have a mission to complete, I'm not getting stuck here...<br />I HAVE A GODDAMN LIFE UNLIKE YOU!<br />",
       "hasDecisions": false,
       "nextDialogId": 81,
       "decisions": []
@@ -809,7 +809,7 @@
     {
       "id": 82,
       "speaker": "Celeste",
-      "text": "<br />Are you truly such a selfish bastard that you would risk killing all these people for the sake of a mission? <br /> Would you stoop that low? Is the congratulatory pat in the back and promotion worth the sacrifice???<br />",
+      "text": "<br />Are you truly such a selfish bastard that you would risk killing all these people for the sake of a mission?<br />Would you stoop that low? Is the congratulatory pat in the back and promotion worth the sacrifice???<br />",
       "hasDecisions": false,
       "nextDialogId": 83,
       "decisions": []
@@ -831,12 +831,12 @@
       "decisions": [
         {
           "id": 1,
-          "text": "<br />Clearly more than you if you are willing to throw away all your morals for the sake of a paycheck... <br /> It's not an option, I'm your Commander and I'm telling you, YOU can go home but the mission is OVER!<br />",
+          "text": "<br />Clearly more than you if you are willing to throw away all your morals for the sake of a paycheck...<br />It's not an option, I'm your Commander and I'm telling you, YOU can go home but the mission is OVER!<br />",
           "nextDialogId": 85
         },
         {
           "id": 2,
-          "text": "<br />Let's all calm down, Izumi, you can leave, we can deactivate the field for about 2 to 5 minutes... <br /> Enough for take off, we'll provide food and whatever else you need...but it's over, give up before we make you...<br />",
+          "text": "<br />Let's all calm down, Izumi, you can leave, we can deactivate the field for about 2 to 5 minutes...<br />Enough for take off, we'll provide food and whatever else you need...but it's over, give up before we make you...<br />",
           "nextDialogId": 88
         }
       ]
@@ -852,7 +852,7 @@
     {
       "id": 86,
       "speaker": "Celeste",
-      "text": "<br />We are staying, we see a future here, if your glory obsessed excuse of an existence doesn't feel free to leave. <br /> You have about 2 to 5 minutes to leave. <br /> This will deactivate de magnetic field... go!<br />",
+      "text": "<br />We are staying, we see a future here, if your glory obsessed excuse of an existence doesn't feel free to leave.<br />You have about 2 to 5 minutes to leave.<br />This will deactivate de magnetic field... go!<br />",
       "hasDecisions": false,
       "nextDialogId": 87,
       "decisions": []
@@ -860,7 +860,7 @@
     {
       "id": 87,
       "speaker": "Izumi",
-      "text": "<br />2 to 5 minutes you say? Okay... It has been a displeasure to work with you... <br /> *Izumi embarks and leaves*<br />",
+      "text": "<br />2 to 5 minutes you say? Okay... It has been a displeasure to work with you...<br />*Izumi embarks and leaves*<br />",
       "hasDecisions": false,
       "nextDialogId": null,
       "decisions": [],
@@ -896,7 +896,7 @@
     {
       "id": 90,
       "speaker": "Celeste",
-      "text": "<br />*Pulls out a gun* Go... I'm warning you I will shoot. <br /> Leave and never come back, tell base we both died. <br /> *Izumi embarks and leaves*<br />",
+      "text": "<br />*Pulls out a gun* Go... I'm warning you I will shoot.<br />Leave and never come back, tell base we both died.<br />*Izumi embarks and leaves*<br />",
       "hasDecisions": false,
       "nextDialogId": null,
       "decisions": [],
@@ -905,7 +905,7 @@
     {
       "id": 91,
       "speaker": "Izumi",
-      "text": "<br />What thing? <br /> This is all calculated, nothing you could do can stop me. <br />",
+      "text": "<br />What thing?<br />This is all calculated, nothing you could do can stop me.<br />",
       "hasDecisions": false,
       "nextDialogId": 92,
       "decisions": []
@@ -913,7 +913,7 @@
     {
       "id": 92,
       "speaker": "Player",
-      "text": "<br />Even if you could deactivate it, we would never let you leave alive. <br /> Go... <br /> *Izumi embarks and leaves*<br />",
+      "text": "<br />Even if you could deactivate it, we would never let you leave alive.<br />Go...<br />*Izumi embarks and leaves*<br />",
       "hasDecisions": false,
       "nextDialogId": null,
       "decisions": [],
