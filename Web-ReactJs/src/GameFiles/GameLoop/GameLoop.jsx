@@ -15,117 +15,137 @@ function GameLoop() {
     };
 
     const dialogs = dialogsData.dialogs; // Lista de diálogos
-  const [currentDialog, setCurrentDialog] = useState(dialogs[0]); // Primeiro diálogo
-  const [mensagem, setMensagem] = useState(""); // Texto acumulado
-  const [typingText, setTypingText] = useState(""); // Texto sendo digitado
-  const [showDecisions, setShowDecisions] = useState(false); // Exibe as decisões
-  const [decisions, setDecisions] = useState([]); // Lista de decisões disponíveis
-  const [inputValue, setInputValue] = useState(""); // Valor do input do usuário
+    const [currentDialog, setCurrentDialog] = useState(dialogs[0]); // Primeiro diálogo
+    const [mensagem, setMensagem] = useState(""); // Texto acumulado
+    const [typingText, setTypingText] = useState(""); // Texto sendo digitado
+    const [showDecisions, setShowDecisions] = useState(false); // Exibe as decisões
+    const [decisions, setDecisions] = useState([]); // Lista de decisões disponíveis
+    const [inputValue, setInputValue] = useState(""); // Valor do input do usuário
+    const [achievementModal, setAchievementModal] = useState(false); // Estado para controlar a exibição do pop-up
+    const [achievementData, setAchievementData] = useState(null); // Dados do achievement
+  
+    const typingSpeed = 1; // Velocidade de typing em milissegundos
 
-  const typingSpeed = 50; // Velocidade de typing em milissegundos
+    const [currentState, setState] = useState(false);
 
-  const [currentState, setState] = useState(false);
+    const MainMenuClick = () => {
+      const leaving = window.confirm('If you leave you will lose all your progress. Are you sure?');
+  
+      if (leaving) {
+          setState(true);
+          StateManager('MainMenu');
+      } else {
+          setState(false); 
+      }
+    };
 
-  const MainMenuClick = () => {
-    const leaving = window.confirm('If you leave you will lose all your progress. Are you sure?');
-
-    if (leaving) {
-        setState(true);
-        StateManager('MainMenu');
-    } else {
-        setState(false); 
-    }
-  };
-
-  useEffect(() => {
-    if (!currentDialog) return;
-
-    // Verifica se o diálogo atual tem decisões
-    if (currentDialog.hasDecisions) {
-      setShowDecisions(true);
-      setDecisions(
-        currentDialog.decisions.map((decision) => ({
-          ...decision,
-          text: decision.text.replace(/<br\s*\/?>/g, "\n"), // Substitui <br /> por \n
-        }))
-      );
-      return;
-    }
-
-    // Simula o "typing" do texto do diálogo
-    const dialogText = currentDialog.text || ""; // Garante que seja uma string válida
-    let formattedText = dialogText.split(/(<br\s*\/?>)/g); // Divide o texto em partes, mantendo <br /> como separador
-    let charIndex = 0;
-    let partIndex = 0;
-    let typingBuffer = ""; // Variável para acumular o texto enquanto o typing ocorre
-
-    const intervalo = setInterval(() => {
-      if (partIndex < formattedText.length) {
-        const part = formattedText[partIndex];
-
-        if (part === "<br />" || part === "<br>") {
-          // Adiciona uma quebra de linha
-          typingBuffer += "\n"; // Adiciona uma quebra de linha no buffer
-          setTypingText(typingBuffer); // Atualiza o estado
-          partIndex++;
-        } else if (charIndex < part.length) {
-          // Adiciona caractere por caractere
-          typingBuffer += part[charIndex]; // Adiciona o caractere no buffer
-          setTypingText(typingBuffer); // Atualiza o estado
-          charIndex++;
+    useEffect(() => {
+      if (!currentDialog) return;
+  
+      // Verifica se o diálogo atual tem decisões
+      if (currentDialog.hasDecisions) {
+        setShowDecisions(true);
+        setDecisions(
+          currentDialog.decisions.map((decision) => ({
+            ...decision,
+            text: decision.text.replace(/<br\s*\/?>/g, "\n"), // Substitui <br /> por \n
+          }))
+        );
+        return;
+      }
+  
+      // Verifica se o diálogo atual tem achievements
+      if (currentDialog.achievementsName) {
+        setAchievementData({
+          name: currentDialog.achievementsName,
+          image: currentDialog.achievementsImage,
+          number: currentDialog.achievementsNumber,
+        });
+        setAchievementModal(true); // Exibe o pop-up de achievement
+        return;
+      }
+  
+      // Simula o "typing" do texto do diálogo
+      const dialogText = currentDialog.text || ""; // Garante que seja uma string válida
+      let formattedText = dialogText.split(/(<br\s*\/?>)/g); // Divide o texto em partes, mantendo <br /> como separador
+      let charIndex = 0;
+      let partIndex = 0;
+      let typingBuffer = ""; // Variável para acumular o texto enquanto o typing ocorre
+  
+      const intervalo = setInterval(() => {
+        if (partIndex < formattedText.length) {
+          const part = formattedText[partIndex];
+  
+          if (part === "<br />" || part === "<br>") {
+            // Adiciona uma quebra de linha
+            typingBuffer += "\n"; // Adiciona uma quebra de linha no buffer
+            setTypingText(typingBuffer); // Atualiza o estado
+            partIndex++;
+          } else if (charIndex < part.length) {
+            // Adiciona caractere por caractere
+            typingBuffer += part[charIndex]; // Adiciona o caractere no buffer
+            setTypingText(typingBuffer); // Atualiza o estado
+            charIndex++;
+          } else {
+            // Avança para a próxima parte
+            partIndex++;
+            charIndex = 0;
+          }
         } else {
-          // Avança para a próxima parte
-          partIndex++;
-          charIndex = 0;
+          clearInterval(intervalo); // Para o intervalo ao terminar
+          setMensagem((prevMensagem) =>
+            prevMensagem +
+            `<strong>${currentDialog.speaker}:</strong> ${dialogText}<br />`
+          );
+          setTypingText(""); // Limpa o texto temporário
+  
+          // Avança para o próximo diálogo automaticamente
+          const nextDialog = dialogs.find(
+            (d) => d.id === currentDialog.nextDialogId
+          );
+          setCurrentDialog(nextDialog);
         }
-      } else {
-        clearInterval(intervalo); // Para o intervalo ao terminar
-        setMensagem((prevMensagem) =>
-          prevMensagem +
-          `<strong>${currentDialog.speaker}:</strong> ${dialogText}<br />`
-        );
-        setTypingText(""); // Limpa o texto temporário
-
-        // Avança para o próximo diálogo automaticamente
-        const nextDialog = dialogs.find(
-          (d) => d.id === currentDialog.nextDialogId
-        );
-        setCurrentDialog(nextDialog);
+      }, typingSpeed); // Usa a variável typingSpeed para o intervalo
+  
+      return () => clearInterval(intervalo); // Limpa o intervalo ao desmontar
+    }, [currentDialog]);
+  
+    const handleDecisionInput = (event) => {
+      if (event.key === "Enter") {
+        const decisionId = parseInt(inputValue, 10); // Converte o valor para número
+        const chosenDecision = decisions.find((decision) => decision.id === decisionId);
+  
+        if (chosenDecision) {
+          // Adiciona a decisão escolhida ao texto acumulado
+          setMensagem((prevMensagem) =>
+            prevMensagem +
+            `<strong>Player:</strong> ${chosenDecision.text.replace(
+              /\n/g,
+              "<br />"
+            )}<br />`
+          );
+  
+          // Avança para o próximo diálogo com base na decisão escolhida
+          const nextDialog = dialogs.find(
+            (d) => d.id === chosenDecision.nextDialogId
+          );
+          setCurrentDialog(nextDialog);
+          setShowDecisions(false); // Esconde as decisões
+          setDecisions([]); // Limpa as decisões
+          setInputValue(""); // Reseta o valor do input
+        } else {
+          alert("Escolha inválida. Digite um número válido.");
+          setInputValue(""); // Reseta o valor do input
+        }
       }
-    }, typingSpeed); // Usa a variável typingSpeed para o intervalo
-
-    return () => clearInterval(intervalo); // Limpa o intervalo ao desmontar
-  }, [currentDialog]);
-
-  const handleDecisionInput = (event) => {
-    if (event.key === "Enter") {
-      const decisionId = parseInt(inputValue, 10); // Converte o valor para número
-      const chosenDecision = decisions.find((decision) => decision.id === decisionId);
-
-      if (chosenDecision) {
-        // Adiciona a decisão escolhida ao texto acumulado
-        setMensagem((prevMensagem) =>
-          prevMensagem +
-          `<strong>Player:</strong> ${chosenDecision.text.replace(
-            /\n/g,
-            "<br />"
-          )}<br />`
-        );
-
-        // Avança para o próximo diálogo com base na decisão escolhida
-        const nextDialog = dialogs.find(
-          (d) => d.id === chosenDecision.nextDialogId
-        );
-        setCurrentDialog(nextDialog);
-        setShowDecisions(false); // Esconde as decisões
-        setDecisions([]); // Limpa as decisões
-        setInputValue(""); // Reseta o valor do input
-      } else {
-        alert("Escolha inválida. Digite um número válido.");
-        setInputValue(""); // Reseta o valor do input
-      }
-    }
-  };
+    };
+  
+    const closeAchievementModal = () => {
+      setAchievementModal(false);
+      // Avança para o próximo diálogo
+      const nextDialog = dialogs.find((d) => d.id === currentDialog.nextDialogId);
+      setCurrentDialog(nextDialog);
+    };
   
     return (
         <body>
@@ -229,6 +249,61 @@ function GameLoop() {
                     )}
                 </div>
             </div>
+            {/* Modal de Achievement */}
+            {achievementModal && (
+              <div
+                style={{
+                  position: "fixed",
+                  top: 0,
+                  left: 0,
+                  right: 0,
+                  bottom: 0,
+                  backgroundColor: "rgba(0, 0, 0, 0.8)",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  zIndex: 9999,
+                }}
+              >
+                <div
+                  style={{
+                    backgroundColor: "#333",
+                    padding: "20px",
+                    borderRadius: "10px",
+                    textAlign: "center",
+                    width: "300px",
+                    color: "#fff",
+                  }}
+                >
+                  <img
+                    src={achievementData?.image}
+                    alt={achievementData?.name}
+                    style={{
+                      width: "100%",
+                      height: "auto",
+                      borderRadius: "10px",
+                      marginBottom: "10px",
+                    }}
+                  />
+                  <p>Achievement</p>
+                  <h3>{achievementData?.name}</h3>
+                  <button
+                    onClick={closeAchievementModal}
+                    style={{
+                      marginTop: "20px",
+                      padding: "10px 20px",
+                      backgroundColor: "#444",
+                      border: "none",
+                      color: "#fff",
+                      cursor: "pointer",
+                      borderRadius: "5px",
+                    }}
+                  >
+                    Fechar
+                  </button>
+                </div>
+              </div>
+            )}
         </body>
     );
 }
