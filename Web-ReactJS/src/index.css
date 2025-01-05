@@ -190,6 +190,7 @@ button:hover{
   background: transparent;
   color: rgb(var(--fg-pb-green));
   min-width: 350px;
+  font-size: medium;
   font-family: 'Share Tech Mono', monospace;
 }
 
@@ -201,6 +202,7 @@ button:hover{
   color: rgb(var(--fg-pb-green));
   cursor: pointer;
   font-family: 'Share Tech Mono', monospace;
+  font-size: medium;
   text-transform: uppercase;
   transition: all 0.3s ease;
   min-width: 350px;
@@ -248,6 +250,7 @@ button:hover{
   left: 1rem;
   padding: 0.5rem 1rem;
   background-color: transparent;
+  font-size: medium;
   border: 2px solid rgb(var(--fg-pb-green));
   color: rgb(var(--fg-pb-green));
   cursor: pointer;
@@ -504,25 +507,37 @@ button:hover .sentence {
 }
 
 .text-container{
-  position: relative;
+  position: absolute;
 }
 
-span {
-  color:rgb(var(--fg-pb-green));
+.contains-textfr{
+  width: 70vw;
+  margin-top: 40px;
+}
+
+.text{
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
   font-family: 'Share Tech Mono', monospace;
+  font-size: medium;
+  border-right: 10px solid rgb(var(--fg-pb-green));
+  color:rgb(var(--fg-pb-green)) ;
+  animation: type 5s steps(60, end), cursor .8s ease infinite;
 }
 
-.blinker {
-  opacity: 1;
-  margin-bottom: -2px;
-  height: 15px;
-  margin-left: -5px;
-  border-left: 7px solid rgb(var(--fg-pb-green));
-  animation: blinker 0.9s steps(2, start) infinite;
+@keyframes type {
+  0%{
+    width: 0;
+  }
+
+  100%{
+    width: 100%;
+  }
 }
 
-@keyframes blinker {
-  to { 
-    visibility: hidden; 
+@keyframes cursor {
+  50%{
+    border-color: transparent;
   }
 }

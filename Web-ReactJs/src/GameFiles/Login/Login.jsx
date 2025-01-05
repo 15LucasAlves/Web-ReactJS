@@ -11,7 +11,7 @@ function Login() {
         <div className="retro-container">
           <div className="loginContainer">
             <button className="backButton" onClick={() => StateManager("MainMenu")}>
-              ← Back to Menu
+              ← BACK TO MENU
             </button>
             <LoginEmail onLoginSuccess={() => StateManager("MainMenu")} />
             <div className="divider">

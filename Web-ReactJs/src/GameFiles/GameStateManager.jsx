@@ -10,7 +10,8 @@ var currentState;
 
 //State manager
 //This function will return the component that corresponds to the current state
-function StateManager(currentState) {
+//added buttonclass so i could show each achievement based on which button was pressed
+function StateManager(currentState, buttonclass = null) {
     var changeState;
 
     if (currentState === "MainMenu") {
@@ -25,7 +26,7 @@ function StateManager(currentState) {
     else if (currentState === "Login") {
         changeState = <Login/>
     }else if (currentState === "AchievScreen") {
-        changeState = <Achievs/>
+        changeState = <Achievs buttonclass={buttonclass} />;
     }
     //If the current state null or doesn´t exist, return an error message to the console and return main menu
     else {

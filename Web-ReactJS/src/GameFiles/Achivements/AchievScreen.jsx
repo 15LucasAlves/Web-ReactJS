@@ -1,44 +1,45 @@
 import 'react'
 import '../../index.css';
 import StateManager from '../GameStateManager';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
-function AchievScreen(){
+function AchievScreen({ buttonclass }){
 
-    //https://codepen.io/tjezidzic/pen/LLWoLw
+    console.log('buttonclass:', buttonclass);
+
+    const [Text, setText] = useState('');
     
-    var data = [
-        {
-          AboutDevTypeText: "<span>A Coward's Way<br/><br/>It's funny how things turn out, one minute you are out in the clear, one second u have a riffle against your forehead...</span><br/><br/><br/><span>Well...<br/>Truly</span><br/>"
+    useEffect(() => {
+        if(buttonclass === 'achievement1'){
+            setText("Date: xx / xx / 2125 <br />Remaining active time: 000 days 3 hours 23 min 35 sec <br />Oxygen levels: Rapidly depleting Contact to base: Error... Failed to connect <br />Retrying... <br />Retrying... <br />Retrying... <br />Contact to base: Error... Failed to connect <br />Reviewing Mission Protocol  <br />Codename: Dies Irae <br />Investigate deviations of asteroids to Earth [Priority] <br />Study other Celestial Bodies <br />Contact Shadow Garden and disable the magnetic field [High Risk] <br />Report to base<br /> <br />Mission Log <br />Mission Status: Complete <br />Personnel Status... <br />Retrieving... <br />Izumi: Status(Alive) <br />Celeste: Status(Presumed dead) <br /> <br />You decided completing the mission and following orders was more important than the lives on the colony, as such, you have received the promotion you so eagerly awaited for. <br />Both you and Izumi were congratulated unrelentingly by the company, with the colony and their magnetic field gone the asteroids were no longer on route to Earth. <br />Even then, you live as a dog on a leash, unable to fight, unable to flee, forever haunted by the lives you took in the pursuit of glory. <br /> <br />Was it all worth it in the end? <br />");
+        }else if (buttonclass === 'achievement2'){
+            setText("achievement2");
+        }else if (buttonclass === 'achievement3'){
+            setText("achievement3");
+        }else if (buttonclass === 'achievement4'){
+            setText("achievement4");
+        }else if (buttonclass === 'achievement5'){
+            setText("achievement5");
+        }else if (buttonclass === 'achievement6'){
+            setText("achievement6");
         }
-      ];
-      
-      var allElements = document.getElementsByClassName("typeing");
-      for (var j = 0; j < allElements.length; j++) {
-        var currentElementId = allElements[j].id;
-        var currentElementIdContent = data[0][currentElementId];
-        var element = document.getElementById(currentElementId);
-        var devTypeText = currentElementIdContent;
-      
-        var i = 0, isTag, text;
-        (function type() {
-          text = devTypeText.slice(0, ++i);
-          if (text === devTypeText) return;
-          element.innerHTML = text + `<span class='blinker'>&#32;</span>`;
-          var char = text.slice(-1);
-          if (char === "<") isTag = true;
-          if (char === ">") isTag = false;
-          if (isTag) return type();
-          setTimeout(type, 60);
-        })();
-      }
-      
-
+    }, [buttonclass]);
+    
     return(
         <body>
             <div className='bg-terminal'>
                 <div className='text-container'>
-                    <span id="AboutDevTypeText" class="typeing"></span><span class='blinker'>&#32;</span>
+                <div className='contains-textfr'>
+                        <h1 className="text" 
+                            dangerouslySetInnerHTML={{ __html: Text }} 
+                            style={{
+                            whiteSpace: 'pre-wrap',  
+                            wordWrap: 'break-word',  
+                            maxHeight: '70vh',     
+                            verflowY: 'auto',  
+                            }}
+                        />
+                    </div>
                     <div className='log-container'>
                         <div className='boxcontain'>
                             <div className='buttonsGame'>
