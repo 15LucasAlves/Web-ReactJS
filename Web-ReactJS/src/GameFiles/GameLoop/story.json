@@ -457,7 +457,8 @@
       "text": "<br />I hope you regret this in hell. <br /> *Spaceship takes off* <br /> *You witness as a meteor strikes the solar panels systems to nothing* <br />",
       "hasDecisions": false,
       "nextDialogId": null,
-      "decisions": []
+      "decisions": [],
+      "achievements": 1
     },
     {
       "id": 45,
@@ -488,8 +489,9 @@
       "speaker": "Izumi",
       "text": "<br />Commander?! How could you... is this it? You get to go back? <br /> And I get to rot here? <br /> I also have a family on earth, I also have ambitions... <br /> Come back... please...<br />",
       "hasDecisions": false,
-      "nextDialogId":null,
-      "decisions": []
+      "nextDialogId": null,
+      "decisions": [],
+      "achievements": 3
     },
     {
       "id": 49,
@@ -711,7 +713,8 @@
       "text": "<br />Goodbye friend...<br />",
       "hasDecisions": false,
       "nextDialogId": null,
-      "decisions": []
+      "decisions": [],
+      "achievements": 6
     },
     {
       "id": 71,
@@ -727,7 +730,8 @@
       "text": "<br />Promise? <br /> *Aster frees himself from Izumi's grip and runs towards Orchid* <br /> *Ivy who was just behind Izumi, knocks him out and cuffs him*<br />",
       "hasDecisions": false,
       "nextDialogId": null,
-      "decisions": []
+      "decisions": [],
+      "achievements": 2
     },
     {
       "id": 73,
@@ -759,7 +763,8 @@
       "text": "<br />I'm sorry... <br /> *Celeste shoots Izumi one last time* <br /> *After 10 minutes Celeste also passes away from bleeding* <br />",
       "hasDecisions": false,
       "nextDialogId": null,
-      "decisions": []
+      "decisions": [],
+      "achievements": 4
     },
     {
       "id": 77,
@@ -858,7 +863,8 @@
       "text": "<br />2 to 5 minutes you say? Okay... It has been a displeasure to work with you... <br /> *Izumi embarks and leaves*<br />",
       "hasDecisions": false,
       "nextDialogId": null,
-      "decisions": []
+      "decisions": [],
+      "achievements": 5
     },
     {
       "id": 88,
@@ -893,7 +899,8 @@
       "text": "<br />*Pulls out a gun* Go... I'm warning you I will shoot. <br /> Leave and never come back, tell base we both died. <br /> *Izumi embarks and leaves*<br />",
       "hasDecisions": false,
       "nextDialogId": null,
-      "decisions": []
+      "decisions": [],
+      "achievements": 5
     },
     {
       "id": 91,
@@ -909,7 +916,8 @@
       "text": "<br />Even if you could deactivate it, we would never let you leave alive. <br /> Go... <br /> *Izumi embarks and leaves*<br />",
       "hasDecisions": false,
       "nextDialogId": null,
-      "decisions": []
+      "decisions": [],
+      "achievements": 5
     }
   ]
 }
