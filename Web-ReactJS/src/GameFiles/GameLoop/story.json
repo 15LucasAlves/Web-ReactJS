@@ -467,7 +467,7 @@
       "nextDialogId": null,
       "decisions": [],
       "achievementsName": "Mission Complete",
-      "achievementsImage": "../Achivements/achievements/missioncomplete.PNG",
+      "achievementsImage": "src/GameFiles/Achivements/achievements/missioncomplete.PNG",
       "achievementsNumber": 1
     },
     {
@@ -502,7 +502,7 @@
       "nextDialogId": null,
       "decisions": [],
       "achievementsName": "A Coward's Way",
-      "achievementsImage": "../Achivements/achievements/acowardsway.PNG",
+      "achievementsImage": "src/GameFiles/Achivements/achievements/acowardsway.PNG",
       "achievements": 3
     },
     {
@@ -727,7 +727,7 @@
       "nextDialogId": null,
       "decisions": [],
       "achievementsName": "A Lamb to the Slaughter",
-      "achievementsImage": "../Achivements/achievements/alambtotheslaughter.PNG",
+      "achievementsImage": "src/GameFiles/Achivements/achievements/alambtotheslaughter.PNG",
       "achievements": 6
     },
     {
@@ -746,7 +746,7 @@
       "nextDialogId": null,
       "decisions": [],
       "achievementsName": "Unfair Sentence",
-      "achievementsImage": "../Achivements/achievements/unfairsentence.PNG",
+      "achievementsImage": "src/GameFiles/Achivements/achievements/unfairsentence.PNG",
       "achievements": 2
     },
     {
@@ -781,7 +781,7 @@
       "nextDialogId": null,
       "decisions": [],
       "achievementsName": "A Friend's Way",
-      "achievementsImage": "../Achivements/achievements/afriendsway.PNG",
+      "achievementsImage": "src/GameFiles/Achivements/achievements/afriendsway.PNG",
       "achievements": 4
     },
     {
@@ -883,7 +883,7 @@
       "nextDialogId": null,
       "decisions": [],
       "achievementsName": "Peace in Space",
-      "achievementsImage": "../Achivements/achievements/peaceinspace.PNG",
+      "achievementsImage": "src/GameFiles/Achivements/achievements/peaceinspace.PNG",
       "achievements": 5
     },
     {
@@ -921,7 +921,7 @@
       "nextDialogId": null,
       "decisions": [],
       "achievementsName": "Peace in Space",
-      "achievementsImage": "../Achivements/achievements/peaceinspace.PNG",
+      "achievementsImage": "src/GameFiles/Achivements/achievements/peaceinspace.PNG",
       "achievements": 5
     },
     {
@@ -940,7 +940,7 @@
       "nextDialogId": null,
       "decisions": [],
       "achievementsName": "Peace in Space",
-      "achievementsImage": "../Achivements/achievements/peaceinspace.PNG",
+      "achievementsImage": "src/GameFiles/Achivements/achievements/peaceinspace.PNG",
       "achievements": 5
     }
   ]
