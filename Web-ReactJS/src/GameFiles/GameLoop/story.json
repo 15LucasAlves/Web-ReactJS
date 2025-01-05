@@ -3,7 +3,7 @@
     {
       "id": 0,
       "speaker": "Console",
-      "text": "<br />Date: xx / xx / 2125<br />Remaining active time: 000 days 3 hours 23 min 35 sec<br />Oxygen levels: Rapidly depleting<br />Contact to base: Error... Failed to connect<br /><br />Retrying... Retrying... Retrying...<br />Contact to base: Error... Failed to connect<br /><br />Reviewing Mission Protocol <br />Codename: Dies Irae<br />Investigate deviations of asteroids to Earth [Priority]<br />Study other Celestial Bodies<br />Contact XXX and disable XXX [High Risk]<br />Report to base",
+      "text": "<br />Date: xx / xx / 2125<br />Remaining active time: 000 days 3 hours 23 min 35 sec<br />Oxygen levels: Rapidly depleting<br />Contact to base: Error... Failed to connect<br /><br />Retrying... Retrying... Retrying...<br />Contact to base: Error... Failed to connect<br /><br />Reviewing Mission Protocol <br />Codename: Dies Irae<br />Investigate deviations of asteroids to Earth [Priority]<br />Study other Celestial Bodies<br />Contact XXX and disable XXX [High Risk]<br />Report to base<br />",
       "hasDecisions": false,
       "nextDialogId": 1,
       "decisions":[]
