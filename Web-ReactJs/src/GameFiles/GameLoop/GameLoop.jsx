@@ -24,6 +24,19 @@ function GameLoop() {
 
   const typingSpeed = 50; // Velocidade de typing em milissegundos
 
+  const [currentState, setState] = useState(false);
+
+  const MainMenuClick = () => {
+    const leaving = window.confirm('If you leave you will lose all your progress. Are you sure?');
+
+    if (leaving) {
+        setState(true);
+        StateManager('MainMenu');
+    } else {
+        setState(false); 
+    }
+  };
+
   useEffect(() => {
     if (!currentDialog) return;
 
@@ -176,7 +189,7 @@ function GameLoop() {
                     <div className='boxcontain'>
                         <div className='buttonsGame'>
                             <button 
-                                className= 'mainMenuGame' onClick={() => {StateManager("MainMenu");}}>
+                                className= 'mainMenuGame' onClick={() => {MainMenuClick()}}>
                                 <img src="src/GameFiles/GameLoop/icons/menu.png" className="menuImage" />
                                 Main Menu
                             </button>
