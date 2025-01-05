@@ -186,12 +186,6 @@ function GameLoop() {
                                 <img src="src/GameFiles/GameLoop/icons/terminal.png" className="terminalImage" />
                                 Terminal
                             </button>
-                            <button 
-                                className={`logGame ${activeTab === "MissionLog" ? "selected" : ""}`} 
-                                onClick={() => toggleTab("MissionLog")}>
-                                <img src="src/GameFiles/GameLoop/icons/folder.png" className="folderImage" />
-                                MissionLog
-                            </button>
                         </div>
                     </div>
                     {activeTab === "Terminal" && (
@@ -217,12 +211,7 @@ function GameLoop() {
                         }}
                      />
         
-                )}
-                            
-                        </div>
-                    )}
-                    {activeTab === "MissionLog" && (
-                        <div className='missionLog'>
+                )}  
                         </div>
                     )}
                 </div>
