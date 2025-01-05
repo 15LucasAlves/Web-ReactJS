@@ -920,6 +920,8 @@
       "hasDecisions": false,
       "nextDialogId": null,
       "decisions": [],
+      "achievementsName": "Peace in Space",
+      "achievementsImage": "../Achivements/achievements/peaceinspace.png",
       "achievements": 5
     },
     {
@@ -937,6 +939,8 @@
       "hasDecisions": false,
       "nextDialogId": null,
       "decisions": [],
+      "achievementsName": "Peace in Space",
+      "achievementsImage": "../Achivements/achievements/peaceinspace.png",
       "achievements": 5
     }
   ]
