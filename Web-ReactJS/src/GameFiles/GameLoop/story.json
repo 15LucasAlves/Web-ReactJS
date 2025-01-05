@@ -86,7 +86,7 @@
     {
       "id": 10,
       "speaker": "Player",
-      "text": "<br />Commander 'Player Name' speaking... Landing processes initiated. Landing in 5 minutes regular time. Fleet 021 out.<br />*Landing Finalized* <br /> *Please put on your suits* <br /> *Opening decompression chamber* <br /> *Airlock one through 3 disengaging* <br /> *Clear to walk*",
+      "text": "<br />Commander 'Player Name' speaking... Landing processes initiated. Landing in 5 minutes regular time. Fleet 021 out.<br />*Landing Finalized* <br /> *Please put on your suits* <br /> *Opening decompression chamber* <br /> *Airlock one through 3 disengaging* <br /> *Clear to walk*<br />",
       "hasDecisions": false,
       "nextDialogId": 11,
       "decisions": []
@@ -134,7 +134,7 @@
     {
       "id": 16,
       "speaker": "Celeste",
-      "text": "<br />Sorry for the Nutjob, sometimes he forgets to have manners.<br />",
+      "text": "<br />Sorry for the Nutjob, sometimes he forgets his manners.<br />",
       "hasDecisions": false,
       "nextDialogId": 17,
       "decisions": []
@@ -553,7 +553,7 @@
     {
       "id": 55,
       "speaker": "Carnation",
-      "text": "<br />The magnetic field not only helps in making this area more secure, it also serves as a energy reserve if we stop getting energy from the Sol. <br /> If you look outside, there's and area that looks like it has a checkered floor. In reality its all solar panels to make it so we never have to worry about energy. <br /> From the oxygen bubble to the machines in the mechanical bay, even the labs need the panels to keep everything in place. <br /> In case of an emergency we should last about a week...<br />",
+      "text": "<br />The magnetic field not only helps in making this area more secure, it also serves as a energy reserve if we stop getting energy from the Sol. <br /> If you look outside, there's an area that looks like it has a checkered floor. In reality its all solar panels to make it so we never have to worry about energy. <br /> From the oxygen bubble to the machines in the mechanical bay, even the labs need the panels to keep everything in place. <br /> In case of an emergency we should last about a week...<br />",
       "hasDecisions": false,
       "nextDialogId": 56,
       "decisions": []

@@ -10,9 +10,9 @@ function GameLoop() {
     //sets constant to behave like tab instead of button, terminal is the default one
     const [activeTab, setActiveTab] = useState("Terminal");
 
-    /*const toggleTab = (tab) => {
+    const toggleTab = (tab) => {
         setActiveTab(tab);
-    };*/
+    };
 
     const dialogs = dialogsData.dialogs; // Lista de diálogos
     const [currentDialog, setCurrentDialog] = useState(dialogs[0]); // Primeiro diálogo
@@ -22,7 +22,7 @@ function GameLoop() {
     const [decisions, setDecisions] = useState([]); // Lista de decisões disponíveis
     const [inputValue, setInputValue] = useState(""); // Valor do input do usuário
 
-    const typingSpeed = 1; // Velocidade de typing em milissegundos
+    const typingSpeed = 50; // Velocidade de typing em milissegundos
   
   useEffect(() => {
     if (!currentDialog) return;
