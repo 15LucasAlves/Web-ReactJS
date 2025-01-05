@@ -501,6 +501,8 @@
       "hasDecisions": false,
       "nextDialogId": null,
       "decisions": [],
+      "achievementsName": "A Coward's Way",
+      "achievementsImage": "../Achivements/achievements/acowardsway.png",
       "achievements": 3
     },
     {
@@ -724,6 +726,8 @@
       "hasDecisions": false,
       "nextDialogId": null,
       "decisions": [],
+      "achievementsName": "A Lamb to the Slaughter",
+      "achievementsImage": "../Achivements/achievements/alambtotheslaughter.png",
       "achievements": 6
     },
     {
@@ -741,6 +745,8 @@
       "hasDecisions": false,
       "nextDialogId": null,
       "decisions": [],
+      "achievementsName": "Unfair Sentence",
+      "achievementsImage": "../Achivements/achievements/unfairsentence.png",
       "achievements": 2
     },
     {
@@ -774,6 +780,8 @@
       "hasDecisions": false,
       "nextDialogId": null,
       "decisions": [],
+      "achievementsName": "A Friend's Way",
+      "achievementsImage": "../Achivements/achievements/afriendsway.png",
       "achievements": 4
     },
     {
@@ -874,6 +882,8 @@
       "hasDecisions": false,
       "nextDialogId": null,
       "decisions": [],
+      "achievementsName": "Peace in Space",
+      "achievementsImage": "../Achivements/achievements/peaceinspace.png",
       "achievements": 5
     },
     {
