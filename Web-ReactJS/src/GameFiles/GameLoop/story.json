@@ -1,6 +1,14 @@
 {
   "dialogs": [
     {
+      "id": 0,
+      "speaker": "Console",
+      "text": "<br />Date: xx / xx / 2125<br />Remaining active time: 000 days 3 hours 23 min 35 sec<br />Oxygen levels: Rapidly depleting<br />Contact to base: Error... Failed to connect<br /><br />Retrying... Retrying... Retrying...<br />Contact to base: Error... Failed to connect<br /><br />Reviewing Mission Protocol <br />Codename: Dies Irae<br />Investigate deviations of asteroids to Earth [Priority]<br />Study other Celestial Bodies<br />Contact XXX and disable XXX [High Risk]<br />Report to base",
+      "hasDecisions": false,
+      "nextDialogId": 1,
+      "decisions":[]
+    },
+    {
       "id": 1,
       "speaker": "Celeste",
       "text": "<br />Sooo... I guess this is it. It was good knowing you!<br />*Grabs communication radio and frantically tries to attune it to Base's frequency*<br />Oh to hell with this, I can't believe those bastards just cut off all of the comms.<br />",
@@ -458,7 +466,9 @@
       "hasDecisions": false,
       "nextDialogId": null,
       "decisions": [],
-      "achievements": 1
+      "achievementsName": "Mission Complete",
+      "achievementsImage": "../Achivements/achievements/missioncomplete.png",
+      "achievementsNumber": 1
     },
     {
       "id": 45,
