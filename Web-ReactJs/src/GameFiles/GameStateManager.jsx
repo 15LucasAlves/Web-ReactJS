@@ -4,6 +4,7 @@ import MainMenu from "./MainMenu/MainMenu.jsx";
 import GameLoop from "./GameLoop/GameLoop.jsx";
 import Achievements from "./Achivements/Achivements.jsx";
 import Login from "./Login/Login.jsx";
+import Achievs from "./Achivements/AchievScreen.jsx"
 
 var currentState;
 
@@ -23,6 +24,8 @@ function StateManager(currentState) {
     }
     else if (currentState === "Login") {
         changeState = <Login/>
+    }else if (currentState === "AchievScreen") {
+        changeState = <Achievs/>
     }
     //If the current state null or doesn´t exist, return an error message to the console and return main menu
     else {

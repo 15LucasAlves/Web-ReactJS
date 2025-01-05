@@ -12,7 +12,7 @@ function Achievements() {
                 <h1 className='achievements'> Achievements </h1> 
                 <div className='box'>
                     <div className='contains'>
-                        <button className='achievement3'> 
+                        <button className='achievement3' onClick={() => StateManager("AchievScreen") }> 
                             <img src="src/GameFiles/Achivements/achievements/acowardsway.PNG" className="cowards_way"/>
                         </button>
                         <small className='name'>'A Coward's Way'</small>
