@@ -258,7 +258,7 @@ function GameLoop() {
                   left: 0,
                   right: 0,
                   bottom: 0,
-                  backgroundColor: "rgba(0, 0, 0, 0.8)",
+                  backgroundColor: "rgb(0, 0, 0)",
                   display: "flex",
                   justifyContent: "center",
                   alignItems: "center",
@@ -267,7 +267,7 @@ function GameLoop() {
               >
                 <div
                   style={{
-                    backgroundColor: "#333",
+                    backgroundColor: "rgb(0, 0, 0)",
                     padding: "20px",
                     borderRadius: "10px",
                     textAlign: "center",
