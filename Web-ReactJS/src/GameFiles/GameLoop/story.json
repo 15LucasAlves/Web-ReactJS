@@ -27,7 +27,7 @@
     {
       "id": 4,
       "speaker": "Izumi",
-      "text": "<br />Company lapdog- you...",
+      "text": "<br />Company lapdog- you...<br />",
       "hasDecisions": false,
       "nextDialogId": 5,
       "decisions": []
