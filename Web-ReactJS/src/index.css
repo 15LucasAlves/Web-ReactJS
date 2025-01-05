@@ -310,13 +310,12 @@ button:hover{
 /* Game Page css */
 
 div.text-container {
-  width: 90vw;
+  width: 80vw;
   height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 30px;
   border: 2px solid rgb(var(--fo-fg));
   color: var(--primary-color);
   mask-image: linear-gradient(to bottom, #0005 50%, #000 50%);
@@ -325,7 +324,7 @@ div.text-container {
 }
 
 div.boxcontain{
-  width: 90vw;
+  width: 80vw;
   height: 8vh;
   display: flex;
   flex-direction: column;
@@ -341,7 +340,7 @@ div.boxcontain{
 }
 
 div.inputcontain{
-  width: 90vw;
+  width: 80vw;
   height: 8vh;
   display: flex;
   flex-direction: row;
@@ -363,9 +362,11 @@ div.inputcontain{
   cursor: pointer;
   font-family: 'Share Tech Mono', monospace;
   text-transform: uppercase;
+  font-size: medium;
   transition: all 0.3s ease;
-  min-width: 95%;
-  align-items: end;
+  min-width: 99%;
+  position: relative;
+  justify-content: end;
 }
 
 
@@ -376,12 +377,6 @@ div.inputcontain{
   position: absolute; 
   top: 0; 
   left: 0;
-}
-
-.sendImage{
-  width: 40px;
-  height: auto;
-  
 }
 
 .terminalImage, .menuImage, .folderImage{
@@ -403,9 +398,87 @@ button:hover .folderImage {
   color: rgb(var(--fg-pb-green));
   cursor: pointer;
   font-family: 'Share Tech Mono', monospace;
+  font-size: medium;
   text-transform: uppercase;
   transition: all 0.3s ease;
   min-width: 50px;
 }
 
+.selected {
+  background-color: rgb(var(--fg-pb-green));
+  color: black;
+  .terminalImage, .folderImage{
+    filter: grayscale(100%) brightness(0); 
+  }
+}
 
+/*Achievements*/
+
+.achievements{
+  margin: 120px 0 120px 0; /* y1 top padding, x1 left padding, y2 bottom padding, x2 right padding */
+  cursor: default;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 100;
+  font-family: 'Share Tech Mono', monospace, system-ui;
+  color: rgb(var(--fo-fg));
+  position: absolute;
+  top: 0;
+}
+
+.box{
+  margin-top: 40px;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.contains{
+  display: flex;
+  flex-direction: column;
+  max-width: 150px;
+  min-width: 150px;
+}
+
+.contains-container{
+  display: flex;
+  flex-direction: column;
+  max-width: 150px;
+  min-width: 150px;
+}
+
+.name{
+  color: rgb(var(--fg-pb-green));
+  font-family: 'Share Tech Mono', monospace;
+  font-size: medium;
+  text-align: center;
+}
+
+.achievement1, .achievement2, .achievement3, .achievement4, .achievement5, .achievement6{
+  padding: 1rem;
+  background-color: transparent;
+  border: 2px solid rgb(var(--fg-pb-green));
+  color: rgb(var(--fg-pb-green));
+  cursor: pointer;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: medium;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  min-width: 20px;
+  background: transparent; 
+  margin-bottom: 15px;
+}
+
+.cowards_way, .friends_way, .lamb, .mission, .space, .sentence{
+  width: 120px;
+}
+
+button:hover .cowards_way,
+button:hover .friends_way,
+button:hover .lamb,
+button:hover .mission,
+button:hover .space,
+button:hover .sentence {
+  filter: grayscale(100%) brightness(0); 
+}
