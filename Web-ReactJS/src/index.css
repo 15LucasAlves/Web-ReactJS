@@ -381,6 +381,11 @@ div.inputcontain{
   left: 0;
 }
 
+.achieh, .achieh2{
+  color: rgb(var(--fg-pb-green));
+  font-family: 'Share Tech Mono', monospace;
+}
+
 .terminalImage, .menuImage, .folderImage{
   width: 25px;
   height: auto;
@@ -391,6 +396,20 @@ button:hover .terminalImage,
 button:hover .menuImage,
 button:hover .folderImage {
   filter: grayscale(100%) brightness(0); 
+}
+
+.buton{
+  padding: 1rem;
+  background-color: transparent;
+  border: 2px solid rgb(var(--fg-pb-green));
+  color: rgb(var(--fg-pb-green));
+  cursor: pointer;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: medium;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  min-width: 50px;
+  margin-top: 10px;
 }
 
 .terminalButton, .mainMenuGame, .logGame{
@@ -544,4 +563,10 @@ button:hover .sentence {
   50%{
     border-color: transparent;
   }
+}
+
+button:disabled {
+  color: #A9A9A9;
+  cursor: not-allowed;
+  filter: grayscale(100%) brightness(0); 
 }

@@ -40,9 +40,37 @@ function Achievements() {
         }
     }, [user]);
 
-    //if(userData === "ending:1"){
+    useEffect(() => {
+        if (userData) {
+            // Disable all buttons first
+            document.getElementById("achievement1").disabled = true;
+            document.getElementById("achievement2").disabled = true;
+            document.getElementById("achievement3").disabled = true;
+            document.getElementById("achievement4").disabled = true;
+            document.getElementById("achievement5").disabled = true;
+            document.getElementById("achievement6").disabled = true;
 
-    //}
+            // Enable the achievement button based on userData (assuming the structure contains these keys)
+            if (userData.ending === 1) {
+                document.getElementById("achievement1").disabled = false;
+            }
+            if (userData.ending=== 2) {
+                document.getElementById("achievement2").disabled = false;
+            }
+            if (userData.ending=== 3) {
+                document.getElementById("achievement3").disabled = false;
+            }
+            if (userData.ending=== 4) {
+                document.getElementById("achievement4").disabled = false;
+            }
+            if (userData.ending=== 5) {
+                document.getElementById("achievement5").disabled = false;
+            }
+            if (userData.ending=== 6) {
+                document.getElementById("achievement6").disabled = false;
+            }
+        }
+    }, [userData]);
 
     return (
         <div className='bg-terminal'>
@@ -53,20 +81,20 @@ function Achievements() {
                 <h1 className='achievements'> ACHIEVEMENTS </h1> 
                 <div className='box'>
                     <div className='contains'>
-                        <button className='achievement3' onClick={() => StateManager("AchievScreen", 'achievement3') }> 
+                        <button id = "achievement3" className='achievement3' onClick={() => StateManager("AchievScreen", 'achievement3') }> 
                             <img src="src/GameFiles/Achivements/achievements/acowardsway.PNG" className="cowards_way"/>
                         </button>
                         <small className='name'>'A COWARD'S WAY'</small>
                     </div>
                     <div className='contains'>
-                        <button className='achievement4' onClick={() => StateManager("AchievScreen", 'achievement4') }> 
+                        <button id = "achievement4" className='achievement4' onClick={() => StateManager("AchievScreen", 'achievement4') }> 
                             <img src="src/GameFiles/Achivements/achievements/afriendsway.PNG" className="friends_way"/>
                         </button>
                         <small className='name'>'A FRIEND'S WAY'</small>
                     </div>
                     <div className='contains-container'>
                         <div className='contains'>
-                            <button className='achievement6' onClick={() => StateManager("AchievScreen", 'achievement6') }> 
+                            <button id = "achievement6" className='achievement6' onClick={() => StateManager("AchievScreen", 'achievement6') }> 
                                 <img src="src/GameFiles/Achivements/achievements/alambtotheslaughter.PNG" className="lamb"/>
                             </button>
                             <small className='name'>'A LAMB TO THE</small>
@@ -74,19 +102,19 @@ function Achievements() {
                         <small className='name'>SLAUGHTER'</small>
                     </div>
                     <div className='contains'>
-                        <button className='achievement1' onClick={() => StateManager("AchievScreen", 'achievement1') }> 
+                        <button id = "achievement1" className='achievement1' onClick={() => StateManager("AchievScreen", 'achievement1') }> 
                             <img src="src/GameFiles/Achivements/achievements/missioncomplete.PNG" className="mission"/>
                         </button>
                         <small className='name'>'MISSION COMPLETE'</small>
                     </div>
                     <div className='contains'>
-                        <button className='achievement5' onClick={() => StateManager("AchievScreen", 'achievement5') }> 
+                        <button id = "achievement5" className='achievement5' onClick={() => StateManager("AchievScreen", 'achievement5') }> 
                             <img src="src/GameFiles/Achivements/achievements/peaceinspace.PNG" className="space"/>
                         </button>
                         <small className='name'>'PEACE IN SPACE'</small>
                     </div>
                     <div className='contains'>
-                        <button className='achievement2' onClick={() => StateManager("AchievScreen", 'achievement2') }> 
+                        <button id = "achievement2" className='achievement2' onClick={() => StateManager("AchievScreen", 'achievement2') }> 
                             <img src="src/GameFiles/Achivements/achievements/unfairsentence.PNG" className="sentence"/>
                         </button>
                         <small className='name'>'UNFAIR SENTENCE'</small>

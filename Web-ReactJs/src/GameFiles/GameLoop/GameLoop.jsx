@@ -311,19 +311,10 @@ function GameLoop() {
                       marginBottom: "10px",
                     }}
                   />
-                  <p>Achievement</p>
-                  <h3>{achievementData?.name}</h3>
-                  <button
+                  <p className="achieh">Achievement</p>
+                  <h3 className="achieh2">{achievementData?.name}</h3>
+                  <button className="buton"
                     onClick={closeAchievementModal}
-                    style={{
-                      marginTop: "20px",
-                      padding: "10px 20px",
-                      backgroundColor: "#444",
-                      border: "none",
-                      color: "#fff",
-                      cursor: "pointer",
-                      borderRadius: "5px",
-                    }}
                   >
                     Fechar
                   </button>
