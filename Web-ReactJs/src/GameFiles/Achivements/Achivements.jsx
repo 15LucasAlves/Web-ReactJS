@@ -4,6 +4,13 @@ import StateManager from '../GameStateManager';
 import React, { useState, useEffect } from 'react';
 import { auth, db } from "../Login/fireBase";
 import { doc, setDoc, getDoc } from "firebase/firestore"; 
+ 
+import acowardsway from "../../assets/achievements/acowardsway.png"
+import afriendsway from "../../assets/achievements/afriendsway.png"
+import alambtotheslaughter from "../../assets/achievements/alambtotheslaughter.png"
+import missioncomplete from "../../assets/achievements/missioncomplete.png"
+import peaceinspace from "../../assets/achievements/peaceinspace.png"
+import unfairsentence from "../../assets/achievements/unfairsentence.png"
 
 function Achievements() {
 
@@ -82,20 +89,20 @@ function Achievements() {
                 <div className='box'>
                     <div className='contains'>
                         <button id = "achievement3" className='achievement3' onClick={() => StateManager("AchievScreen", 'achievement3') }> 
-                            <img src="src/GameFiles/Achivements/achievements/acowardsway.PNG" className="cowards_way"/>
+                            <img src={acowardsway} className="cowards_way"/>
                         </button>
                         <small className='name'>'A COWARD'S WAY'</small>
                     </div>
                     <div className='contains'>
                         <button id = "achievement4" className='achievement4' onClick={() => StateManager("AchievScreen", 'achievement4') }> 
-                            <img src="src/GameFiles/Achivements/achievements/afriendsway.PNG" className="friends_way"/>
+                            <img src={afriendsway} className="friends_way"/>
                         </button>
                         <small className='name'>'A FRIEND'S WAY'</small>
                     </div>
                     <div className='contains-container'>
                         <div className='contains'>
                             <button id = "achievement6" className='achievement6' onClick={() => StateManager("AchievScreen", 'achievement6') }> 
-                                <img src="src/GameFiles/Achivements/achievements/alambtotheslaughter.PNG" className="lamb"/>
+                                <img src={alambtotheslaughter} className="lamb"/>
                             </button>
                             <small className='name'>'A LAMB TO THE</small>
                         </div>
@@ -103,19 +110,19 @@ function Achievements() {
                     </div>
                     <div className='contains'>
                         <button id = "achievement1" className='achievement1' onClick={() => StateManager("AchievScreen", 'achievement1') }> 
-                            <img src="src/GameFiles/Achivements/achievements/missioncomplete.PNG" className="mission"/>
+                            <img src={missioncomplete} className="mission"/>
                         </button>
                         <small className='name'>'MISSION COMPLETE'</small>
                     </div>
                     <div className='contains'>
                         <button id = "achievement5" className='achievement5' onClick={() => StateManager("AchievScreen", 'achievement5') }> 
-                            <img src="src/GameFiles/Achivements/achievements/peaceinspace.PNG" className="space"/>
+                            <img src={peaceinspace} className="space"/>
                         </button>
                         <small className='name'>'PEACE IN SPACE'</small>
                     </div>
                     <div className='contains'>
                         <button id = "achievement2" className='achievement2' onClick={() => StateManager("AchievScreen", 'achievement2') }> 
-                            <img src="src/GameFiles/Achivements/achievements/unfairsentence.PNG" className="sentence"/>
+                            <img src={unfairsentence} className="sentence"/>
                         </button>
                         <small className='name'>'UNFAIR SENTENCE'</small>
                     </div>
