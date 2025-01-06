@@ -3,8 +3,7 @@ import '../../index.css';
 import StateManager from '../GameStateManager';
 import dialogsData from "./story.json"; // Importa o JSON
 import { doc, getDoc, updateDoc } from "firebase/firestore";
-import "../MainMenu/MainMenu"
-
+import { auth, db } from "../Login/fireBase";
 
 function GameLoop() {
     //sets constant to behave like tab instead of button, terminal is the default one
@@ -23,6 +22,7 @@ function GameLoop() {
     const [inputValue, setInputValue] = useState(""); // Valor do input do usuário
     const [achievementModal, setAchievementModal] = useState(false); // Estado para controlar a exibição do pop-up
     const [achievementData, setAchievementData] = useState(null); // Dados do achievement
+    const [user, setUser] = useState(null);
   
     const typingSpeed = 1; // Velocidade de typing em milissegundos
 
@@ -38,6 +38,18 @@ function GameLoop() {
           setState(false); 
       }
     };
+
+    useEffect(() => {
+      // Listen for auth state changes
+      const unsubscribe = auth.onAuthStateChanged((user) => {
+        setUser(user);
+      });
+
+      console.log(user);
+
+      // Cleanup subscription
+      return () => unsubscribe();
+  }, []);
 
     useEffect(() => {
       if (!currentDialog) return;
