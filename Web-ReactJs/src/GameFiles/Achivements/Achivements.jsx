@@ -51,22 +51,22 @@ function Achievements() {
             document.getElementById("achievement6").disabled = true;
 
             // Enable the achievement button based on userData (assuming the structure contains these keys)
-            if (userData.ending === 1) {
+            if (userData["Mission Complete"] === 1) {
                 document.getElementById("achievement1").disabled = false;
             }
-            if (userData.ending=== 2) {
+            if (userData["Unfair Sentence"] === 2) {
                 document.getElementById("achievement2").disabled = false;
             }
-            if (userData.ending=== 3) {
+            if (userData["A Coward's Way"]=== 3) {
                 document.getElementById("achievement3").disabled = false;
             }
-            if (userData.ending=== 4) {
+            if (userData["A Friend's Way"]=== 4) {
                 document.getElementById("achievement4").disabled = false;
             }
-            if (userData.ending=== 5) {
+            if (userData["Peace in Space"] === 5) {
                 document.getElementById("achievement5").disabled = false;
             }
-            if (userData.ending=== 6) {
+            if (userData["A Lamb to the Slaughter"] === 6) {
                 document.getElementById("achievement6").disabled = false;
             }
         }
