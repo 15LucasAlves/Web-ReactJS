@@ -5,6 +5,9 @@ import dialogsData from "./story.json"; // Importa o JSON
 import { doc, getDoc, updateDoc } from "firebase/firestore";
 import { auth, db } from "../Login/fireBase";
 
+import menu from "../../assets/icons/menu.png"
+import terminal from "../../assets/icons/terminal.png"
+
 function GameLoop() {
     //sets constant to behave like tab instead of button, terminal is the default one
     const [activeTab, setActiveTab] = useState("Terminal");
@@ -237,13 +240,13 @@ function GameLoop() {
                         <div className='buttonsGame'>
                             <button 
                                 className= 'mainMenuGame' onClick={() => {MainMenuClick()}}>
-                                <img src="src/GameFiles/GameLoop/icons/menu.png" className="menuImage" />
+                                <img src={menu} className="menuImage" />
                                 Main Menu
                             </button>
                             <button 
                                 className={`terminalButton ${activeTab === "Terminal" ? "selected" : ""}`} 
                                 onClick={() => toggleTab("Terminal")}>
-                                <img src="src/GameFiles/GameLoop/icons/terminal.png" className="terminalImage" />
+                                <img src={terminal} className="terminalImage" />
                                 Terminal
                             </button>
                         </div>

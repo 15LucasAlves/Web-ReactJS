@@ -3,6 +3,9 @@ import '../../index.css';
 import StateManager from '../GameStateManager';
 import React, { useState, useEffect } from 'react';
 
+import menu from "../../assets/icons/menu.png"
+import terminal from "../../assets/icons/terminal.png"
+
 function AchievScreen({ buttonclass }){
 
     console.log('buttonclass:', buttonclass);
@@ -45,12 +48,12 @@ function AchievScreen({ buttonclass }){
                             <div className='buttonsGame'>
                                 <button 
                                     className= 'mainMenuGame' onClick={() => {StateManager("Achievements");}}>
-                                    <img src="src/GameFiles/GameLoop/icons/menu.png" className="menuImage" />
+                                    <img src={menu} className="menuImage" />
                                     Achievements
                                 </button>
                                 <button 
                                     className='terminalButton2'>
-                                    <img src="src/GameFiles/GameLoop/icons/terminal.png" className="terminalImage" />
+                                    <img src={terminal} className="terminalImage" />
                                     Terminal
                                 </button>
                             </div>
