@@ -55,7 +55,7 @@
         {
           "id": 2,
           "text": "<br />Is now truly the time for pointless arguments? Our oxygen levels are dropping by the second.<br />",
-          "nextDialogId": 6
+          "nextDialogId": 92
         }
       ]
     },
@@ -503,7 +503,7 @@
       "decisions": [],
       "achievementsName": "A Coward's Way",
       "achievementsImage": "src/GameFiles/Achivements/achievements/acowardsway.PNG",
-      "achievements": 3
+      "achievementsNumber": 3
     },
     {
       "id": 49,
@@ -728,7 +728,7 @@
       "decisions": [],
       "achievementsName": "A Lamb to the Slaughter",
       "achievementsImage": "src/GameFiles/Achivements/achievements/alambtotheslaughter.PNG",
-      "achievements": 6
+      "achievementsNumber": 6
     },
     {
       "id": 71,
@@ -747,7 +747,7 @@
       "decisions": [],
       "achievementsName": "Unfair Sentence",
       "achievementsImage": "src/GameFiles/Achivements/achievements/unfairsentence.PNG",
-      "achievements": 2
+      "achievementsNumber": 2
     },
     {
       "id": 73,
@@ -782,7 +782,7 @@
       "decisions": [],
       "achievementsName": "A Friend's Way",
       "achievementsImage": "src/GameFiles/Achivements/achievements/afriendsway.PNG",
-      "achievements": 4
+      "achievementsNumber": 4
     },
     {
       "id": 77,
@@ -884,7 +884,7 @@
       "decisions": [],
       "achievementsName": "Peace in Space",
       "achievementsImage": "src/GameFiles/Achivements/achievements/peaceinspace.PNG",
-      "achievements": 5
+      "achievementsNumber": 5
     },
     {
       "id": 88,
@@ -922,7 +922,7 @@
       "decisions": [],
       "achievementsName": "Peace in Space",
       "achievementsImage": "src/GameFiles/Achivements/achievements/peaceinspace.PNG",
-      "achievements": 5
+      "achievementsNumber": 5
     },
     {
       "id": 91,
@@ -941,7 +941,7 @@
       "decisions": [],
       "achievementsName": "Peace in Space",
       "achievementsImage": "src/GameFiles/Achivements/achievements/peaceinspace.PNG",
-      "achievements": 5
+      "achievementsNumber": 5
     }
   ]
 }
