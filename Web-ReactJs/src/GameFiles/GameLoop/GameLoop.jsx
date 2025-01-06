@@ -27,7 +27,7 @@ function GameLoop() {
     const [achievementData, setAchievementData] = useState(null); // Dados do achievement
     const [user, setUser] = useState(null);
   
-    const typingSpeed = 50; // Velocidade de typing em milissegundos
+    const typingSpeed = 1; // Velocidade de typing em milissegundos
 
     const [currentState, setState] = useState(false);
 
@@ -164,7 +164,6 @@ function GameLoop() {
                     if (docSnapshot.exists) {
                         console.log("a enviar para a bd");
                         updateDoc(Ref, { [currentDialog.achievementsName]: currentDialog.achievementsNumber })
-                        //updateDoc(Ref, { [currentDialog.achievementsName]: currentDialog.achievementsNumber })
                     } else {
                         console.log("no document");
                     }

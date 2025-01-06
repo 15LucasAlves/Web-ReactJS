@@ -55,7 +55,7 @@
         {
           "id": 2,
           "text": "<br />Is now truly the time for pointless arguments? Our oxygen levels are dropping by the second.<br />",
-          "nextDialogId": 6
+          "nextDialogId": 92
         }
       ]
     },
@@ -503,7 +503,7 @@
       "decisions": [],
       "achievementsName": "A Coward's Way",
       "achievementsImage": "assets/achievements/acowardsway.png",
-      "achievements": 3
+      "achievementsNumber": 3
     },
     {
       "id": 49,
@@ -728,7 +728,7 @@
       "decisions": [],
       "achievementsName": "A Lamb to the Slaughter",
       "achievementsImage": "assets/achievements/alambtotheslaughter.png",
-      "achievements": 6
+      "achievementsNumber": 6
     },
     {
       "id": 71,
@@ -746,8 +746,8 @@
       "nextDialogId": null,
       "decisions": [],
       "achievementsName": "Unfair Sentence",
-      "achievementsImage": "assets/achievements/unfairsentence.png",
-      "achievements": 2
+      "achievementsImage": "assets/achievementsNumber/unfairsentence.png",
+      "achievementsNumber": 2
     },
     {
       "id": 73,
@@ -782,7 +782,7 @@
       "decisions": [],
       "achievementsName": "A Friend's Way",
       "achievementsImage": "assets/achievements/afriendsway.png",
-      "achievements": 4
+      "achievementsNumber": 4
     },
     {
       "id": 77,
@@ -884,7 +884,7 @@
       "decisions": [],
       "achievementsName": "Peace in Space",
       "achievementsImage": "assets/achievements/peaceinspace.png",
-      "achievements": 5
+      "achievementsNumber": 5
     },
     {
       "id": 88,
@@ -922,7 +922,7 @@
       "decisions": [],
       "achievementsName": "Peace in Space",
       "achievementsImage": "assets/achievements/peaceinspace.png",
-      "achievements": 5
+      "achievementsNumber": 5
     },
     {
       "id": 91,
@@ -941,7 +941,7 @@
       "decisions": [],
       "achievementsName": "Peace in Space",
       "achievementsImage": "assets/achievements/peaceinspace.png",
-      "achievements": 5
+      "achievementsNumber": 5
     }
   ]
 }
