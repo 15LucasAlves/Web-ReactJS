@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import '../../index.css';
 import StateManager from '../GameStateManager';
-//import scene from './story.json';
 import dialogsData from "./story.json"; // Importa o JSON
-
+import { doc, getDoc, updateDoc } from "firebase/firestore";
+import "../MainMenu/MainMenu"
 
 
 function GameLoop() {
@@ -141,6 +141,22 @@ function GameLoop() {
     };
   
     const closeAchievementModal = () => {
+        if(user && user.email){
+            const currentUserEmail = user.email;
+            console.log(currentUserEmail);
+            const Ref = doc(db, 'users', currentUserEmail);
+            getDoc(Ref)
+                .then(docSnapshot => {
+                    if (docSnapshot.exists) {
+                        updateDoc(Ref, { ending: currentDialog.achievementsNumber })
+                    } else {
+                        console.log("no document");
+                    }
+                })
+                .catch(error => {
+                    console.error("Error:", error);
+                });
+        }
       setAchievementModal(false);
       // Avança para o próximo diálogo
       const nextDialog = dialogs.find((d) => d.id === currentDialog.nextDialogId);
@@ -203,8 +219,6 @@ function GameLoop() {
           </ul>
         </div>
       )}
-
-      
     </div>
                     <div className='boxcontain'>
                         <div className='buttonsGame'>
